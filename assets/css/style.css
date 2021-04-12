@@ -1,0 +1,23 @@
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Backround Color */
+
+.bg-red {
+    background-color: #F44336;
+}
+
+/* Font size */
+
+.text-10px {
+    font-size: 10px;
+}
+
+.w-186px {
+    width: 186px;
+}
+
+.border-br {
+    border-bottom-right-radius: 16px;
+}
