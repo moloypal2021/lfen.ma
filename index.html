@@ -25,8 +25,8 @@
 <body>
     <div class="bg-clip">
         <!-- Navbar start -->
-        <div class="bg-red container-fluid px-1 px-sm-3 px-lg-5">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="bg-red">
+            <nav class="container navbar navbar-expand-lg navbar-light bg-transparent px-sm-3 px-lg-5">
                 <button class="navbar-toggler d-block border-0 text-white" type="button" data-toggle="collapse"
                     data-target="#navtoggle" aria-controls="navtoggle" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -47,6 +47,7 @@
                 </div>
             </nav>
         </div>
+
         <!-- Navbar Collapse Menu Start -->
         <div class="collapse" id="navtoggle">
             <div class="bg-white border-br p-4 collapse-nav ml-0">
@@ -84,16 +85,19 @@
             </div>
         </div>
         <!-- Navbar Collapse Menu End -->
+
         <!-- Navbar End -->
 
-        <div class="container-fluid py-2 py-sm-3 py-lg-4 my-lg-3 px-2 px-sm-3 px-lg-5">
-            <header class="bg-glass p-2 p-sm-3 px-md-4">
+
+        <!-- Header Section Start -->
+        <header class="container pt-2 pt-sm-3 pt-lg-4 mt-xl-2 px-sm-3 px-lg-4">
+            <div class="bg-glass p-2 p-sm-3 px-md-4 py-md-4">
                 <div class="row ">
                     <div class="col-auto brand-logo order-1">
                         <img src="./assets/images/logo.png" alt="" class="">
                     </div>
-                    <form class="col-md-7 order-md-2 order-3">
-                        <div class="form-row align-items-center px-md-4 py-md-0 py-3">
+                    <form class="col-lg-7 order-lg-2 order-3">
+                        <div class="form-row align-items-center justify-content-center px-lg-4 py-lg-0 py-2">
                             <div class="col-5 px-lg-2 px-1">
                                 <select class="form-control text-14px font-weight-bold" id="exampleFormControlSelect1">
                                     <option>Categorie</option>
@@ -112,25 +116,25 @@
                                     <option>Ville 5</option>
                                 </select>
                             </div>
-                            <div class="col-2 px-lg-2 px-1 my-1">
+                            <div class="col-auto col-md-1 px-lg-2 px-1 my-1">
                                 <button type="submit" class="btn bg-red text-white px-sm-4 text-14px"><i
                                         class="fas fa-search"></i></button>
                             </div>
                         </div>
                     </form>
-                    <div class="col-auto text-right ml-auto  order-md-3 order-2">
-                        <a href="#" class="notification">
+                    <div class="col-auto text-right ml-auto order-lg-3 order-2">
+                        <a href="#" class="notification mb-2">
                             <span class="text-black h3"><i class="far fa-shopping-cart" aria-hidden="true"></i></span>
                             <span class="badge bg-red text-white rounded-circle">2</span>
                         </a>
                     </div>
                 </div>
-                <div class=" mt-md-5 mt-3">
+                <div class="pt-lg-4 mt-md-5 mt-2">
                     <ul class="nav justify-content-between ">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex align-items-center">
-                                    <span class="nav-icon mr-3">
+                                    <span class="nav-icon mr-1 mr-xl-3">
                                         <svg viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M13 0C5.818 0 0 6.087 0 13.59c0 7.505 5.822 13.592 13 13.592s13-6.087 13-13.591S20.182 0 13 0zm-.6 16.072c-1.193 1.386-2.378 2.782-3.587 4.15-.271.31-.605.502-.935.52-.55 0-.863-.34-.834-.833.025-.406.205-.733.48-1.007.663-.646 1.339-1.274 2.01-1.906l2.019-1.896c.058-.057.087-.053.137.008.234.28.468.554.705.824.05.057.05.088.004.14zm5.263 4.456a1.434 1.434 0 01-.83-.488 398.308 398.308 0 01-1.756-2.02c-.88-1.02-1.756-2.044-2.632-3.064a970.97 970.97 0 01-1.877-2.194c-.32-.379-.713-.518-1.188-.414a3.078 3.078 0 01-1.164.044c-.383-.066-.725-.227-.992-.528-.684-.767-1.268-1.609-1.669-2.572-.166-.397-.283-.811-.28-1.247.005-.563.222-1.003.71-1.26.284-.153.592-.17.905-.127.563.079 1.072.314 1.56.602a9.29 9.29 0 011.83 1.417c.347.344.489.78.53 1.26.009.087.009.17.013.236a4.864 4.864 0 01-.084.802c-.083.444.025.837.342 1.142.593.567 1.197 1.125 1.798 1.688.984.92 1.969 1.84 2.949 2.76.759.715 1.518 1.434 2.273 2.154.246.235.413.518.471.867.104.62-.304 1.051-.91.942zm3.049-12.143a6.764 6.764 0 01-.538.841 28.51 28.51 0 01-2.065 2.507c-.425.463-.95.698-1.547.78-.08.01-.159.018-.238.023-.15.008-.296-.048-.446-.026-.309.043-.576.16-.784.41-.296.353-.597.697-.889 1.046-.046.057-.075.052-.125.004-.196-.187-.392-.37-.592-.554-.054-.048-.046-.074 0-.117.338-.314.676-.633 1.013-.946.334-.31.468-.694.41-1.156a1.901 1.901 0 01.037-.575c.1-.576.342-1.073.755-1.479.784-.771 1.589-1.517 2.452-2.188.225-.175.459-.345.705-.489.02-.013.041-.026.062-.03.025-.005.042.022.055.043.016.035-.013.048-.03.07-.204.218-.408.432-.608.654-.647.706-1.293 1.413-1.894 2.158a3.106 3.106 0 00-.246.336c-.013.022-.038.053-.013.074.025.026.05-.004.071-.017.146-.096.28-.214.409-.332.88-.789 1.714-1.626 2.54-2.476.012-.009.02-.022.03-.035.074-.078.15-.065.195.04.021.043-.02.06-.037.082-.3.323-.605.645-.905.972-.588.646-1.177 1.291-1.715 1.984-.05.061-.091.131-.133.196-.012.018-.033.044-.008.066.02.022.046 0 .062-.013.134-.087.255-.192.371-.297a49.181 49.181 0 002.636-2.572c.059-.061.088-.044.138.004.054.053.054.083 0 .14-.65.68-1.285 1.378-1.902 2.088-.258.297-.517.598-.75.916-.034.048-.063.096-.097.144-.008.017-.029.039-.008.056.017.018.038.005.059-.008.116-.066.216-.162.317-.249a36.047 36.047 0 001.805-1.718c.3-.3.6-.606.897-.915.05-.053.08-.048.121.004.038.048.083.078.017.144a56.486 56.486 0 00-1.673 1.822c-.325.371-.65.742-.95 1.138a2.614 2.614 0 00-.122.18c-.012.017-.033.043-.012.065.025.026.05 0 .07-.013.143-.092.268-.201.393-.314a50.19 50.19 0 002.323-2.25c.1-.105.2-.21.3-.31.021-.022.038-.06.08-.022.029.048.02.079.004.114z"
@@ -144,7 +148,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex align-items-center">
-                                    <span class="nav-icon mr-3">
+                                    <span class="nav-icon mr-1 mr-xl-3">
                                         <svg viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M22.7847 9.01561C22.9807 9.23373 23.0891 9.45614 23.11 9.73415C23.3685 9.59729 23.3935 9.41337 23.2851 9.19097C23.185 8.99422 23.0391 8.91723 22.7847 9.01561Z"
@@ -161,7 +165,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex align-items-center">
-                                    <span class="nav-icon mr-3">
+                                    <span class="nav-icon mr-1 mr-xl-3">
                                         <svg viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M13 0C5.822 0 0 6.087 0 13.59c0 7.505 5.822 13.592 13 13.592 7.182 0 13-6.087 13-13.591S20.182 0 13 0zM9.405 13.177c-.13.109-.255.226-.334.383-.058.114-.112.1-.204.048A4.687 4.687 0 017.04 11.66a4.831 4.831 0 01-.48-2.777c.263-2.18 1.932-3.872 4.009-4.103 2.46-.27 4.679 1.604 4.946 4.181.017.175.02.345.03.463a6.36 6.36 0 01-.068.85c-.012.07-.033.1-.108.087a1.321 1.321 0 00-.555.004c-.091.022-.117.005-.096-.1.092-.44.105-.885.046-1.334-.133-.999-.571-1.827-1.305-2.472-2.048-1.793-5.13-.886-5.993 1.757-.601 1.84.229 3.924 1.906 4.774.004 0 .008.005.012.005.138.082.138.082.02.183zm3.487-3.855c-.067-1.016-.905-1.818-1.886-1.8-.83.017-1.551.597-1.772 1.425-.221.837.112 1.723.826 2.18a.295.295 0 01.129.166c.083.24.171.48.258.72.013.03.038.065.017.091-.025.035-.066.004-.1-.004-1.134-.301-1.943-1.396-1.943-2.63-.005-1.303.871-2.42 2.106-2.681 1.193-.253 2.419.423 2.903 1.604.22.546.267 1.108.146 1.688-.017.083-.046.13-.138.13-.088 0-.175.018-.259.04-.062.017-.087-.004-.104-.061-.054-.161-.117-.318-.167-.475-.037-.127-.004-.258-.016-.393zm5.872 12.17c-.734.287-1.464.575-2.198.863-.53.205-1.064-.048-1.268-.597a3.418 3.418 0 00-1.36-1.705c-.559-.366-1.122-.733-1.668-1.116-.354-.249-.684-.537-1.022-.807-.267-.214-.534-.432-.8-.641a.961.961 0 01-.347-.545c-.183-.724-.37-1.448-.554-2.167-.117-.454.079-.911.483-1.116.338-.17.885-.1 1.047.514.092.349.18.693.267 1.042.063.253.13.502.192.755.05.187.142.348.288.475.075.065.158.091.254.052.1-.039.155-.117.159-.226.029-.44.054-.886 0-1.326-.042-.353-.2-.671-.317-.998-.43-1.2-.864-2.399-1.293-3.602a.871.871 0 01.284-.986c.3-.222.704-.209.992.035a.95.95 0 01.267.419l.576 1.604c.008.022.02.044.029.07.38-.789 1.364-.628 1.572.135.188-.37.467-.566.868-.518.408.052.613.34.721.719.05-.013.054-.057.071-.087.175-.292.425-.445.755-.423.334.022.58.2.7.527.3.82.589 1.64.885 2.46l.776 2.145a1.9 1.9 0 01-.009 1.356 1.92 1.92 0 00-.012 1.404c.1.275.196.55.296.824.225.624-.038 1.225-.634 1.46z"
@@ -175,7 +179,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex align-items-center">
-                                    <span class="nav-icon mr-3">
+                                    <span class="nav-icon mr-1 mr-xl-3">
                                         <svg viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M7.678 7.254c-.25.17-.58.15-.776-.06a.48.48 0 01.15-.77.334.334 0 01.355.043c.092.072.138.162.088.286-.067-.218-.188-.308-.347-.26a.323.323 0 00-.208.38c.042.171.238.282.417.24a.464.464 0 00.33-.403.469.469 0 00-.284-.457c-.225-.099-.488-.022-.66.188a.659.659 0 00-.058.753c.255.397.864.462 1.168-.047-.083-.009-.12.072-.175.107zM8.178 7.81c.071.436.134.876.2 1.313.084-.51.022-1.027.147-1.566-.092.034-.159.06-.226.09-.075.026-.137.056-.12.162zM10.097 13.151c-.07 1.643-.142 3.285-.208 4.927-.005.06.004.107.075.133.433.145.855.325 1.322.35.525.026 1.013-.12 1.468-.282l-2.628-5.18c-.016.035-.029.044-.029.052zM7.862 7.14c0-.009.004-.014.004-.023 0 0-.009-.005-.013-.005.004.01.004.02.009.029z"
@@ -195,7 +199,28 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <div class="d-flex align-items-center">
-                                    <span class="nav-icon mr-3">
+                                    <span class="nav-icon mr-1 mr-xl-3">
+                                        <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.38 7.844c-.1-.069-.209-.069-.305.021a.71.71 0 00-.141.227c-.259.526-.518 1.056-.772 1.582-.037.081-.08.167-.096.252-.03.159.092.3.259.3.137-.017.204-.133.262-.257.276-.569.555-1.133.83-1.702.025-.051.05-.103.063-.158.033-.116-.013-.205-.1-.265zM14.61 8.267c.309.577.613 1.16.926 1.732.033.06.075.111.12.163a.179.179 0 00.13.064c.15.004.263-.12.263-.27 0-.085-.038-.154-.075-.222-.305-.569-.605-1.138-.91-1.702a.672.672 0 00-.087-.141c-.084-.099-.188-.124-.3-.064-.113.06-.155.158-.125.286.008.051.033.103.058.154zM12.983 10.226c.117.004.226-.094.246-.231.013-.068.005-.137.009-.205v-.783-.783c0-.308-.08-.436-.255-.432-.162.005-.233.133-.237.415v1.604c0 .056-.005.116.004.171.02.137.12.24.233.244zM11.348 8.126c.038-.124 0-.227-.104-.295-.104-.073-.233-.047-.325.068-.042.052-.071.116-.104.176l-.801 1.642a.699.699 0 00-.075.222c-.021.15.083.274.22.287a.193.193 0 00.176-.073c.054-.068.108-.145.146-.226.258-.527.513-1.053.771-1.583.034-.073.071-.141.096-.218zM9.242 12.065c-.159.851-.626 1.407-1.401 1.668-.059.428-.046 6.077.016 6.33h2.778c.07-.36.058-6.065-.013-6.339-.771-.256-1.238-.804-1.38-1.66zm.776 5.923a.454.454 0 01-.61.017c-.195-.18-.17-.453.084-.79V16.2c-.258-.381-.28-.633-.062-.813a.456.456 0 01.583.017c.205.193.18.44-.087.791v1.031c.263.346.283.565.092.761zM16.745 12.052c-.284 1.09-.876 1.672-1.685 1.724-.421.03-.818-.043-1.18-.274-.5-.317-.751-.804-.893-1.382-.113.462-.292.873-.634 1.19-.35.324-.78.457-1.23.495-.017.06-.034.09-.034.125-.004 1.958-.004 3.917-.004 5.876 0 .068.008.137.017.205 0 .009.012.017.017.026l.041.047h.275c2.223-.004 4.442-.009 6.665-.017.009 0 .017-.013.025-.017l.025-.026v-6.291c-.78-.248-1.23-.809-1.405-1.681zm-2.027 2.707c.1.069.192.163.258.261-.43.44-.846.873-1.272 1.313-.108-.064-.183-.17-.258-.252.43-.45.846-.881 1.272-1.322zm.321 2.917c-.121-.038-.188-.145-.267-.235.121-.214.847-.984 1.255-1.326a.83.83 0 01.25.248c-.108.21-.871 1.018-1.238 1.313zm-1.376-.004c-.075-.034-.138-.15-.255-.253.855-.906 1.731-1.779 2.57-2.651.104-.013.133.055.187.094.054.038.113.077.146.094l-2.648 2.716z"
+                                                fill="#fff" />
+                                            <path
+                                                d="M13 0C5.818 0 0 5.97 0 13.33c0 7.361 5.822 13.332 13 13.332s13-5.97 13-13.331C26 5.97 20.182 0 13 0zM7.582 5.744c.055-.039.113-.069.171-.103h10.54c.012.081.096.086.141.128a.458.458 0 01.142.462c-.046.206-.183.304-.367.347-.075.017-.154.008-.233.008h-9.99c-.1 0-.2.009-.295-.03a.432.432 0 01-.3-.372.43.43 0 01.191-.44zM7.37 7.112h11.24c.6 1.232 1.21 2.48 1.818 3.73-.263.072-14.31.094-14.894.025.622-1.27 1.227-2.506 1.836-3.755zm13.125 4.957c-.046.039-.055.094-.063.154-.12.697-.513 1.163-1.147 1.433-.067.03-.154.038-.192.12-.066.842-.033 6.043.046 6.312.213 0 .438.017.655-.004.305-.03.538.073.7.334v.273c-.162.24-.379.334-.67.334-4.56-.009-9.118-.004-13.676-.004-.088 0-.18.004-.267-.018a.468.468 0 01-.38-.457.472.472 0 01.421-.453c.134-.013.267 0 .4-.009.184-.008.376.03.551-.03.059-.479.038-6.086-.02-6.33-.956-.325-1.473-1.18-1.323-2.25.134-.042.28-.025.422-.025h14.176c.12 0 .246.004.367.004v.616z"
+                                                fill="#fff" />
+                                            <path
+                                                d="M16.562 8.25c.28.577.563 1.155.846 1.732.03.06.067.12.113.167.075.081.171.103.271.047.096-.056.15-.141.134-.252a1.147 1.147 0 00-.092-.253c-.204-.427-.413-.855-.622-1.279-.075-.153-.15-.303-.229-.453-.05-.094-.125-.158-.238-.167-.15 0-.27.15-.246.3a.739.739 0 00.063.158z"
+                                                fill="#fff" />
+                                        </svg>
+                                    </span>
+                                    <span class="text-white text-uppercase mb-0">magasins</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-icon mr-1 mr-xl-3">
                                         <svg viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M25.997 13.315c.139 6.72-5.145 13.285-12.98 13.35C5.838 26.72-.003 20.64 0 13.32.004 6.007 5.892-.085 13.047 0c7.843.095 13.072 6.669 12.95 13.315zm-12.862 3.031c.134.542.244.993.353 1.445.314 1.346.625 2.691.948 4.032.117.482.42.731.91.61.508-.12.61-.51.534-.98-.03-.184-.084-.365-.126-.545-.361-1.574-.772-3.139-1.079-4.725-.562-2.89-.42-5.602 1.939-7.756.676-.619 1.217-1.397 1.809-2.11.272-.327.306-.689-.017-1.007-.34-.33-.676-.206-.97.086-.31.31-.604.64-.898.968-.617.692-1.179 1.44-1.85 2.072-1.263 1.182-2.262 1.143-3.458-.112-.831-.873-1.595-1.806-2.392-2.708-.315-.357-.672-.748-1.154-.314-.487.438-.218.89.122 1.285.499.58.99 1.165 1.514 1.724 1.226 1.303 2.292 2.666 2.334 4.617.02.92-.009 1.836-.18 2.726-.35 1.84-.79 3.659-1.188 5.49-.114.516-.256 1.062.41 1.294.526.18.853-.142 1.05-.984.34-1.436.667-2.872 1.007-4.308.067-.24.063-.516.382-.8zm-1.456-9.72c-.013.843.55 1.462 1.33 1.462.755 0 1.398-.658 1.393-1.432 0-.752-.608-1.402-1.33-1.423-.793-.026-1.385.559-1.393 1.393zM6.643 8.354c.03.06.059.185.139.258a14.552 14.552 0 012.4 3.027c.1.167.269.266.466.137.18-.12.205-.296.117-.49a5.166 5.166 0 00-.222-.43 11.866 11.866 0 00-2.224-2.721c-.135-.125-.29-.245-.491-.168-.151.052-.193.185-.185.387zm9.891 3.478a.448.448 0 00.353-.228c.654-1.139 1.473-2.14 2.404-3.052.143-.138.202-.322.042-.499-.188-.202-.377-.124-.537.039-.453.46-.936.903-1.338 1.406-.416.524-.773 1.105-1.117 1.68-.155.259-.18.551.193.654z"
@@ -208,8 +233,179 @@
                         </li>
                     </ul>
                 </div>
-            </header>
-        </div>
+            </div>
+        </header>
+        <!-- Header Section End -->
+
+        <!-- Main Section Start -->
+        <main class="container py-2 py-sm-3 py-lg-4 px-sm-3 px-lg-4">
+            <div class="bg-glass p-2 p-sm-3 px-md-4 py-md-4">
+                <!-- Hero Section Start -->
+                <div class="card hero-card border-0 mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-xl-8 col-lg-7 col-md-6">
+                            <img src="./assets/images/hero-img.jpg" class="card-img rounded-0 hero-img-feat"
+                                alt="Hero Image">
+                            <div class="card-img-overlay rounded-0 card-img-text pb-2 pb-md-3 px-2 px-sm-3">
+                                <p class="card-text text-12px text-white text-uppercase font-weight-bold mb-0 pb-lg-3">
+                                    porttitor, a
+                                    dapibus est
+                                    egestas. Aenean
+                                    tempus sem
+                                    Nullam purus
+                                    sem, rutrum at semper condimentum, efficitur viverra ipsum. Curabitur tristique erat
+                                    a ante vitae tincidunt fringilla. </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 col-md-6">
+                            <div class="card-body">
+                                <h4 class="text-black font-weight-bolder">Sirenis Punta Cana Resort Casino</h4>
+                                <p class="text-14px text-paragraph pb-3">Kingscliff: From 4230 DH for a 3 night Romantic
+                                    Stay
+                                    with Bottle of
+                                    wine...</p>
+                                <div class="d-flex justify-content-between pb-4">
+                                    <h4 class="text-black font-weight-bolder">4000 DH</h4>
+                                    <button
+                                        class="btn bg-red text-white text-10px text-uppercase font-weight-bolder">Voir
+                                        le
+                                        Deal</button>
+                                </div>
+                                <div
+                                    class="d-flex justify-content-between bg-light-gray rounded px-2 px-lg-4 py-3 mb-4">
+                                    <div class="text-center px-2">
+                                        <h6 class="text-black font-weight-bolder text-uppercase mb-1">4000 DH</h6>
+                                        <p class="text-12px text-paragraph text-uppercase mb-0">VALUE</p>
+                                    </div>
+                                    <div class="text-center px-2">
+                                        <h6 class="text-black font-weight-bolder text-uppercase mb-1">59%</h6>
+                                        <p class="text-12px text-paragraph text-uppercase mb-0">DISCOUNT</p>
+                                    </div>
+                                    <div class="text-center px-2">
+                                        <h6 class="text-black font-weight-bolder text-uppercase mb-1">8500 DH</h6>
+                                        <p class="text-12px text-paragraph text-uppercase mb-0">SAVINGS</p>
+                                    </div>
+                                </div>
+                                <p class="text-14px text-paragraph text-uppercase font-weight-semibold text-center">
+                                    HURRY UP ONLY A
+                                    FEW DEALS LEFT</p>
+
+                                <div class="d-flex justify-content-center mb-4">
+                                    <div class="mx-2">
+                                        <h5 class="text-black font-weight-semibold">13 <span class="text-paragraph"> J.
+                                            </span></h5>
+                                    </div>
+                                    <div class="mx-2">
+                                        <h5 class="text-black font-weight-semibold">9 <span class="text-paragraph"> H
+                                            </span></h5>
+                                    </div>
+                                    <div class="mx-2">
+                                        <h5 class="text-black font-weight-semibold">17 <span class="text-paragraph">Min.
+                                            </span></h5>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
+                                        <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
+                                                class="fas fa-user"></i></span>
+                                        <p class="text-10px text-black font-weight-bold text-capitalize mb-0">for 2
+                                            <span class="text-paragraph">Person</span>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
+                                        <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
+                                                class="fas fa-angle-double-up"></i></span>
+                                        <p class="text-10px text-black font-weight-bold text-capitalize mb-0">169 <span
+                                                class="text-paragraph">Bought</span> </p>
+                                    </div>
+                                    <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
+                                        <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
+                                                class="fas fa-smile"></i></span>
+                                        <p class="text-10px text-paragraph font-weight-bold text-capitalize mb-0">Offer
+                                            success</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Section End -->
+
+                <!-- How it works Start -->
+                <div class="card py-4 px-xl-5">
+                    <div class="row justify-content-md-between justify-content-between px-4">
+                        <div class="col-sm-auto p-3">
+                            <div class="d-flex flex-wrap flex-sm-nowrap justify-content-center">
+                                <span class="mr-sm-3">
+                                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M33.203 14.875h-2.016c-.924-6.22-5.841-11.138-12.062-12.062V.797A.797.797 0 0018.328 0h-2.656a.797.797 0 00-.797.797v2.016c-6.22.924-11.138 5.841-12.062 12.062H.797a.797.797 0 00-.797.797v2.656c0 .44.357.797.797.797h2.016c.924 6.22 5.841 11.138 12.062 12.062v2.016c0 .44.357.797.797.797h2.656c.44 0 .797-.357.797-.797v-2.016c6.22-.924 11.138-5.841 12.062-12.062h2.016c.44 0 .797-.357.797-.797v-2.656a.797.797 0 00-.797-.797zM19.125 26.87v-2.698a.797.797 0 00-.797-.797h-2.656a.797.797 0 00-.797.797v2.698a10.105 10.105 0 01-7.745-7.745h2.698c.44 0 .797-.357.797-.797v-2.656a.797.797 0 00-.797-.797H7.13a10.105 10.105 0 017.745-7.745v2.698c0 .44.357.797.797.797h2.656c.44 0 .797-.357.797-.797V7.13a10.105 10.105 0 017.745 7.745h-2.698a.797.797 0 00-.797.797v2.656c0 .44.357.797.797.797h2.698a10.104 10.104 0 01-7.745 7.745zm0-9.87a2.125 2.125 0 11-4.25 0 2.125 2.125 0 014.25 0z"
+                                            fill="#000" />
+                                    </svg>
+                                </span>
+                                <div class="w-100 text-sm-left text-center pt-sm-0 pt-3">
+                                    <h6 class="text-14px text-black font-weight-bolder mb-0">FIND YOUR DEAL</h6>
+                                    <p class="text-14px text-paragraph mb-0">Find perfect offer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-auto p-3">
+                            <div class="d-flex flex-wrap flex-sm-nowrap justify-content-center">
+                                <span class="mr-sm-3">
+                                    <svg width="36" height="31" viewBox="0 0 36 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M33.008 18.244L35.962 5.65c.213-.91-.5-1.775-1.463-1.775H9.95l-.572-2.713C9.235.486 8.62 0 7.908 0H1.5C.672 0 0 .65 0 1.453v.969c0 .802.672 1.453 1.5 1.453h4.368l4.39 20.794c-1.05.585-1.758 1.682-1.758 2.94C8.5 29.482 10.067 31 12 31s3.5-1.518 3.5-3.39c0-.95-.403-1.807-1.052-2.422h13.103a3.33 3.33 0 00-1.051 2.421C26.5 29.482 28.067 31 30 31s3.5-1.518 3.5-3.39c0-1.343-.806-2.503-1.974-3.052l.345-1.47c.213-.91-.5-1.776-1.463-1.776H13.632l-.409-1.937h18.322c.7 0 1.307-.47 1.462-1.131z"
+                                            fill="#000" />
+                                    </svg>
+                                </span>
+                                <div class="w-100 text-sm-left text-center pt-sm-0 pt-3">
+                                    <h6 class="text-14px text-black font-weight-bolder mb-0">BUY DEAL</h6>
+                                    <p class="text-14px text-paragraph mb-0">Buy or sabe your deal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-auto p-3">
+                            <div class="d-flex flex-wrap flex-sm-nowrap justify-content-center">
+                                <span class="mr-sm-3">
+                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.5 0C6.49 0 0 6.49 0 14.5S6.49 29 14.5 29 29 22.51 29 14.5 22.51 0 14.5 0zm4.677 9.823c1.035 0 1.871.836 1.871 1.87a1.869 1.869 0 01-1.87 1.872 1.869 1.869 0 01-1.872-1.871c0-1.035.836-1.871 1.871-1.871zm-9.354 0c1.034 0 1.87.836 1.87 1.87a1.869 1.869 0 01-1.87 1.872 1.869 1.869 0 01-1.871-1.871c0-1.035.836-1.871 1.87-1.871zm11.39 9.95A8.71 8.71 0 0114.5 22.92a8.71 8.71 0 01-6.712-3.145c-.795-.953.643-2.146 1.438-1.199a6.832 6.832 0 005.274 2.468c2.046 0 3.964-.9 5.274-2.468.783-.947 2.227.246 1.438 1.199z"
+                                            fill="#000" />
+                                    </svg>
+                                </span>
+                                <div class="w-100 text-sm-left text-center pt-sm-0 pt-3">
+                                    <h6 class="text-14px text-black font-weight-bolder mb-0">UP TO 80% DISCOUNT</h6>
+                                    <p class="text-14px text-paragraph mb-0">Save hundreds of dollars</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-auto p-3">
+                            <div class="d-flex flex-wrap flex-sm-nowrap justify-content-center">
+                                <span class="mr-sm-3">
+                                    <svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.39.974L9.73 8.214 1.536 9.378C.067 9.586-.52 11.352.544 12.364l5.927 5.632-1.402 7.956c-.252 1.438 1.301 2.515 2.602 1.843L15 24.038l7.329 3.757c1.3.667 2.854-.405 2.602-1.843l-1.402-7.956 5.927-5.632c1.066-1.012.477-2.778-.992-2.986L20.27 8.214 16.609.974c-.656-1.29-2.557-1.307-3.218 0z"
+                                            fill="#000" />
+                                    </svg>
+                                </span>
+                                <div class="w-100 text-sm-left text-center pt-sm-0 pt-3">
+                                    <h6 class="text-14px text-black font-weight-bolder mb-0">FIVE STAR SUPPORT</h6>
+                                    <p class="text-14px text-paragraph mb-0">06 54 35 53 23</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- How it works End -->
+
+            </div>
+        </main>
+        <!-- Main Section End -->
 
     </div>
 

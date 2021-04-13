@@ -17,7 +17,7 @@ body {
 .bg-glass {
     margin-left: auto;
     margin-right: auto;
-    background: rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 0.20);
     border: 2px solid rgba(255, 255, 255, 0.12);
     box-sizing: border-box;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
@@ -25,7 +25,15 @@ body {
     border-radius: 10px;
 }
 
+.bg-light-gray {
+    background: #F1F5F8;
+}
+
 /* Text Color */
+
+.text-paragraph {
+    color: #878787;
+}
 
 .text-black {
     color: #000;
@@ -39,11 +47,11 @@ body {
 /* Font size */
 
 .text-10px {
-    font-size: 10px;
+    font-size: 10px !important;
 }
 
 .text-12px {
-    font-size: 12px;
+    font-size: 12px !important;
 }
 
 .text-14px {
@@ -69,6 +77,9 @@ body {
     h6, p {
         font-size: 16px;
     }
+    .text-12px {
+        font-size: 11px !important;
+    }
     .text-14px {
         font-size: 13px;
     }
@@ -92,6 +103,9 @@ body {
     }
     h6, p {
         font-size: 15px;
+    }
+    .text-12px {
+        font-size: 10px !important;
     }
     .text-14px {
         font-size: 12px;
@@ -117,8 +131,35 @@ body {
     h6, p, .p, .h6 {
         font-size: 13px !important;
     }
+    .text-12px {
+        font-size: 9px !important;
+    }
     .text-14px {
         font-size: 10px;
+    }
+}
+
+/* Font-weight */
+
+.font-weight-semibold {
+    font-weight: 600 !important;
+}
+
+.font-weight-bolder {
+    font-weight: 800 !important;
+}
+
+/* Bootstrap Container Customization  */
+
+@media (min-width:1360px) {
+    .container {
+        max-width: 1312px;
+    }
+}
+
+@media (min-width:1440px) {
+    .container {
+        max-width: 1412px;
     }
 }
 
@@ -157,11 +198,13 @@ header .nav .nav-item .nav-link {
     }
 }
 
+/* Nav Icons */
+
 .nav-icon svg {
     width: 24px;
 }
 
-@media(max-width: 767px) {
+@media(max-width: 991px) {
     .nav-icon {
         display: none;
     }
@@ -213,5 +256,44 @@ header .nav .nav-item .nav-link {
         right: -6px;
         width: 18px;
         height: 18px;
+    }
+}
+
+/* Hero Section */
+
+.hero-card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero-img-feat {
+    height: 460px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media(min-width:1440px) {
+    .hero-img-feat {
+        height: 440px;
+    }
+}
+
+@media(max-width:575px) {
+    .hero-img-feat {
+        height: 375px;
+    }
+}
+
+.card-img-text {
+    background-color: #F44336;
+    top: auto;
+    bottom: 0;
+    height: max-content;
+    max-width: 88%;
+}
+
+@media(max-width:575px) {
+    .card-img-text {
+        max-width: 95%;
     }
 }
