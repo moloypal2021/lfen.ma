@@ -17,16 +17,20 @@ body {
 .bg-glass {
     margin-left: auto;
     margin-right: auto;
-    background: rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.40);
     border: 2px solid rgba(255, 255, 255, 0.12);
     box-sizing: border-box;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
     border-radius: 10px;
 }
 
 .bg-light-gray {
     background: #F1F5F8;
+}
+
+.bg-dark-footer {
+    background: #0A223D;
 }
 
 /* Text Color */
@@ -35,13 +39,27 @@ body {
     color: #878787;
 }
 
+.text-paragraph2 {
+    color: #B9B9B9;
+}
+
 .text-black {
     color: #000;
+}
+
+.text-red {
+    color: #FF0000;
 }
 
 .hover\:text-black:hover {
     color: #000 !important;
     font-weight: 600;
+}
+
+/* Shadow */
+
+.shadow-white-md {
+    box-shadow: 0px 0px 9px 3px rgba(255, 255, 255, 0.25);
 }
 
 /* Font size */
@@ -149,6 +167,10 @@ body {
     font-weight: 800 !important;
 }
 
+.font-weight-black {
+    font-weight: 900 !important;
+}
+
 /* Bootstrap Container Customization  */
 
 @media (min-width:1360px) {
@@ -169,7 +191,7 @@ body {
     width: max-content;
     padding-bottom: 20vh !important;
     z-index: 1000;
-    position: fixed;
+    position: absolute;
 }
 
 /* Header Nav Menu */
@@ -212,8 +234,22 @@ header .nav .nav-item .nav-link {
 
 /* Border */
 
-.border-br {
-    border-bottom-right-radius: 16px;
+.border-bl {
+    border-bottom-left-radius: 16px;
+}
+
+.border-l-6 {
+    border-left: 6px solid #F44336;
+}
+
+.border-4 {
+    border: 4px solid #ffff;
+}
+
+/* Border Radius*/
+
+.rounded-10px {
+    border-radius: 10px;
 }
 
 /* Brand Logo */
@@ -228,15 +264,34 @@ header .nav .nav-item .nav-link {
     }
 }
 
+/* ========= Footer ========= */
+
+/* Footer Logo */
+
+.footer-logo {
+    max-width: 196px;
+}
+
+@media (max-width: 575px) {
+    .footer-logo {
+        max-width: 130px;
+    }
+}
+
+/* Client Icon  */
+
+.client-list {
+    max-width: 555px !important;
+    top: -28px;
+    right: 0;
+    left: 0;
+}
+
 /* Badge */
 
 .notification {
     position: relative;
     display: inline-block;
-}
-
-.notification:hover {
-    background: red;
 }
 
 .notification .badge {
@@ -296,4 +351,20 @@ header .nav .nav-item .nav-link {
     .card-img-text {
         max-width: 95%;
     }
+}
+
+.outline-none {
+    outline: none !important;
+}
+
+.social-icon {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10001;
+}
+
+.social-icon .bg-white {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }

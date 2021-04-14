@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <title>Title</title>
@@ -15,8 +15,12 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
+
+    <!-- RTL Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
+        integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -24,67 +28,95 @@
 
 <body>
     <div class="bg-clip">
-        <!-- Navbar start -->
-        <div class="bg-red">
-            <nav class="container navbar navbar-expand-lg navbar-light bg-transparent px-sm-3 px-lg-5">
-                <button class="navbar-toggler d-block border-0 text-white" type="button" data-toggle="collapse"
-                    data-target="#navtoggle" aria-controls="navtoggle" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <span class="">
-                    <img src="./assets/images/flag-icon.png" alt="" width="30px" class="">
-                </span>
-                <div class="d-flex ml-auto align-items-center">
-                    <span class="mr-2"><svg width="24" height="28" viewBox="0 0 24 28" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8.99995 11.375C8.99995 10.4087 8.32824 9.625 7.49996 9.625H6.74997C5.09294 9.625 3.74998 11.1918 3.74998 13.125V15.75C3.74998 17.6832 5.09294 19.25 6.74997 19.25H7.49996C8.32824 19.25 8.99995 18.4663 8.99995 17.5V11.375ZM17.2499 19.25C18.9069 19.25 20.2499 17.6832 20.2499 15.75V13.125C20.2499 11.1918 18.9069 9.625 17.2499 9.625H16.4999C15.6716 9.625 14.9999 10.4087 14.9999 11.375V17.5C14.9999 18.4663 15.6716 19.25 16.4999 19.25H17.2499ZM11.9999 0C5.30529 0 0.214686 6.49852 0 14V14.875C0 15.3584 0.335623 15.75 0.749996 15.75H1.49999C1.91437 15.75 2.24999 15.3584 2.24999 14.875V14C2.24999 7.72789 6.62387 2.625 11.9999 2.625C17.376 2.625 21.7499 7.72789 21.7499 14H21.7443C21.748 14.1329 21.7499 23.0628 21.7499 23.0628C21.7499 24.3398 20.8626 25.375 19.768 25.375H14.9999C14.9999 23.9252 13.9926 22.75 12.7499 22.75H11.2499C10.0073 22.75 8.99995 23.9252 8.99995 25.375C8.99995 26.8248 10.0073 28 11.2499 28H19.768C22.1052 28 23.9999 25.7895 23.9999 23.0628V14C23.7852 6.49852 18.6946 0 11.9999 0Z"
-                                fill="white" />
-                        </svg>
-                    </span>
-                    <span class="text-10px text-white font-weight-bold">06 33 99 11 99 / 06 33 66 33 11</span>
-                </div>
-            </nav>
-        </div>
-
-        <!-- Navbar Collapse Menu Start -->
-        <div class="collapse" id="navtoggle">
-            <div class="bg-white border-br p-4 collapse-nav ml-0">
-                <ul class="nav flex-column mb-4">
-                    <li class="nav-item mb-3">
-                        <span class="nav-link font-weight-bold">Home </span>
+        <!-- Social Icon Start -->
+        <div class="position-fixed social-icon d-flex align-items-center">
+            <div class="bg-white p-2">
+                <ul class="nav flex-column align-items-center">
+                    <li class="nav-item ">
+                        <a class="nav-link p-0 h1" href="#" style="color: #0CD714;"><i class="fab fa-whatsapp"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black hover:text-black" href="#">FAQ</a>
+                    <li class="nav-item ">
+                        <a class="nav-link p-0 h1" href="#" style="color: #3B5998;"><i
+                                class="fab fa-facebook-square"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black hover:text-black" href="#">S’identifie</a>
+                    <li class="nav-item ">
+                        <a class="nav-link p-0 h1" href="#" style="color: #C13584;"><i class="fab fa-instagram"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black hover:text-black" href="#">S’inscrire</a>
+                    <li class="nav-item ">
+                        <a class="nav-link p-0 h1" href="#" style="color: #FF0000;"><i class="fab fa-youtube"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black hover:text-black" href="#">Panier</a>
-                    </li>
-                </ul>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-3">
-                        <span class="nav-link font-weight-bold">Catégories populaires</span>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black hover:text-black" href="#">Notre Séléction</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black hover:text-black" href="#">Voyages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black hover:text-black" href="#">Activités et loisirs</a>
+                    <li class="nav-item ">
+                        <a class="nav-link p-0 h1" href="#" style="color: #000;"><i class="fal fa-comments"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
-        <!-- Navbar Collapse Menu End -->
+        <!-- Social Icon End -->
+
+
+        <!-- Navbar start -->
+        <div class="position-relative">
+            <div class="bg-red">
+                <nav class="container navbar navbar-expand-lg navbar-light bg-transparent px-sm-3 px-lg-5">
+                    <button class="navbar-toggler d-block border-0 text-white outline-none" type="button"
+                        data-toggle="collapse" data-target="#navtoggle" aria-controls="navtoggle" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <span class="">
+                        <img src="./assets/images/flag-icon.png" alt="" width="30px" class="">
+                    </span>
+                    <div class="d-flex ml-auto align-items-center">
+                        <span class="mr-2"><svg width="24" height="28" viewBox="0 0 24 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.99995 11.375C8.99995 10.4087 8.32824 9.625 7.49996 9.625H6.74997C5.09294 9.625 3.74998 11.1918 3.74998 13.125V15.75C3.74998 17.6832 5.09294 19.25 6.74997 19.25H7.49996C8.32824 19.25 8.99995 18.4663 8.99995 17.5V11.375ZM17.2499 19.25C18.9069 19.25 20.2499 17.6832 20.2499 15.75V13.125C20.2499 11.1918 18.9069 9.625 17.2499 9.625H16.4999C15.6716 9.625 14.9999 10.4087 14.9999 11.375V17.5C14.9999 18.4663 15.6716 19.25 16.4999 19.25H17.2499ZM11.9999 0C5.30529 0 0.214686 6.49852 0 14V14.875C0 15.3584 0.335623 15.75 0.749996 15.75H1.49999C1.91437 15.75 2.24999 15.3584 2.24999 14.875V14C2.24999 7.72789 6.62387 2.625 11.9999 2.625C17.376 2.625 21.7499 7.72789 21.7499 14H21.7443C21.748 14.1329 21.7499 23.0628 21.7499 23.0628C21.7499 24.3398 20.8626 25.375 19.768 25.375H14.9999C14.9999 23.9252 13.9926 22.75 12.7499 22.75H11.2499C10.0073 22.75 8.99995 23.9252 8.99995 25.375C8.99995 26.8248 10.0073 28 11.2499 28H19.768C22.1052 28 23.9999 25.7895 23.9999 23.0628V14C23.7852 6.49852 18.6946 0 11.9999 0Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <span class="text-10px text-white font-weight-bold">06 33 99 11 99 / 06 33 66 33 11</span>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Navbar Collapse Menu Start -->
+            <div class="navbar-collapse collapse position-absolute" id="navtoggle">
+                <div class="bg-white border-bl p-4 collapse-nav ml-0">
+                    <ul class="nav flex-column mb-4">
+                        <li class="nav-item mb-3">
+                            <span class="nav-link font-weight-bold">Home </span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black hover:text-black" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black hover:text-black" href="#">S’identifie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black hover:text-black" href="#">S’inscrire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black hover:text-black" href="#">Panier</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3">
+                            <span class="nav-link font-weight-bold">Catégories populaires</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black hover:text-black" href="#">Notre Séléction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black hover:text-black" href="#">Voyages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black hover:text-black" href="#">Activités et loisirs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Navbar Collapse Menu End -->
+        </div>
 
         <!-- Navbar End -->
 
@@ -238,7 +270,7 @@
         <!-- Header Section End -->
 
         <!-- Main Section Start -->
-        <main class="container py-2 py-sm-3 py-lg-4 px-sm-3 px-lg-4">
+        <main class="container py-2 py-sm-3 py-lg-4 px-sm-3 px-lg-4 mb-5">
             <div class="bg-glass p-2 p-sm-3 px-md-4 py-md-4">
                 <!-- Hero Section Start -->
                 <div class="card hero-card border-0 mb-3">
@@ -332,7 +364,7 @@
                 <!-- Hero Section End -->
 
                 <!-- How it works Start -->
-                <div class="card py-4 px-xl-5">
+                <div class="card py-4 px-xl-5 mb-3">
                     <div class="row justify-content-md-between justify-content-between px-4">
                         <div class="col-sm-auto p-3">
                             <div class="d-flex flex-wrap flex-sm-nowrap justify-content-center">
@@ -403,10 +435,476 @@
                 </div>
                 <!-- How it works End -->
 
+
+                <!-- Cards Section Staet -->
+                <div class="row px-2 pb-5">
+                    <div class="col-xl-4 col-md-6 px-2 py-3">
+                        <div class="card rounded-10px border-0 overflow-hidden">
+                            <img src="./assets/images/bg.jpg" class="card-img-top" alt="card-img">
+                            <div class="card-body p-0">
+                                <h5 class="text-black font-weight-bolder border-l-6 pl-3 pt-3 pb-4">Lorem ipsum dolor
+                                    sit
+                                    amet,
+                                    consectetur
+                                    adipiscing elit </h5>
+                                <div class="px-sm-4 px-3 pb-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h4 class="text-red font-weight-bolder">-95%</h4>
+                                        <div class="d-flex align-items-center">
+                                            <del class="text-paragraph2">
+                                                <h5 class="text-paragraph2 font-weight-bolder mr-3">-2000 <span
+                                                        class="text-14px text-uppercase">dH</span></h5>
+                                            </del>
+                                            <h4 class="text-black font-weight-bolder">100 <span
+                                                    class="text-14px text-uppercase">dH</span> </h4>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-14px font-weight-semibold text-capitalize text-paragraph mb-5">um
+                                        dolor
+                                        sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-top px-4 py-2">
+                                    <div class="d-flex justify-content-center ml-xl-4 ml-3">
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">13 <span
+                                                    class="text-paragraph">
+                                                    J.
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">9 <span
+                                                    class="text-paragraph">
+                                                    H
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">17 <span
+                                                    class="text-paragraph">Min.
+                                                </span></h6>
+                                        </div>
+                                    </div>
+                                    <a href="#"
+                                        class="btn bg-red text-white font-weight-bold py-sm-2 py-1 px-3 px-sm-4 text-14px mb-1">Voir
+                                        deal</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 px-2 py-3">
+                        <div class="card rounded-10px border-0 overflow-hidden">
+                            <img src="./assets/images/bg.jpg" class="card-img-top" alt="card-img">
+                            <div class="card-body p-0">
+                                <h5 class="text-black font-weight-bolder border-l-6 pl-3 pt-3 pb-4">Lorem ipsum dolor
+                                    sit
+                                    amet,
+                                    consectetur
+                                    adipiscing elit </h5>
+                                <div class="px-sm-4 px-3 pb-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h4 class="text-red font-weight-bolder">-95%</h4>
+                                        <div class="d-flex align-items-center">
+                                            <del class="text-paragraph2">
+                                                <h5 class="text-paragraph2 font-weight-bolder mr-3">-2000 <span
+                                                        class="text-14px text-uppercase">dH</span></h5>
+                                            </del>
+                                            <h4 class="text-black font-weight-bolder">100 <span
+                                                    class="text-14px text-uppercase">dH</span> </h4>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-14px font-weight-semibold text-capitalize text-paragraph mb-5">um
+                                        dolor
+                                        sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-top px-4 py-2">
+                                    <div class="d-flex justify-content-center ml-xl-4 ml-3">
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">13 <span
+                                                    class="text-paragraph">
+                                                    J.
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">9 <span
+                                                    class="text-paragraph">
+                                                    H
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">17 <span
+                                                    class="text-paragraph">Min.
+                                                </span></h6>
+                                        </div>
+                                    </div>
+                                    <a href="#"
+                                        class="btn bg-red text-white font-weight-bold py-sm-2 py-1 px-3 px-sm-4 text-14px mb-1">Voir
+                                        deal</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 px-2 py-3">
+                        <div class="card rounded-10px border-0 overflow-hidden">
+                            <img src="./assets/images/bg.jpg" class="card-img-top" alt="card-img">
+                            <div class="card-body p-0">
+                                <h5 class="text-black font-weight-bolder border-l-6 pl-3 pt-3 pb-4">Lorem ipsum dolor
+                                    sit
+                                    amet,
+                                    consectetur
+                                    adipiscing elit </h5>
+                                <div class="px-sm-4 px-3 pb-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h4 class="text-red font-weight-bolder">-95%</h4>
+                                        <div class="d-flex align-items-center">
+                                            <del class="text-paragraph2">
+                                                <h5 class="text-paragraph2 font-weight-bolder mr-3">-2000 <span
+                                                        class="text-14px text-uppercase">dH</span></h5>
+                                            </del>
+                                            <h4 class="text-black font-weight-bolder">100 <span
+                                                    class="text-14px text-uppercase">dH</span> </h4>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-14px font-weight-semibold text-capitalize text-paragraph mb-5">um
+                                        dolor
+                                        sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-top px-4 py-2">
+                                    <div class="d-flex justify-content-center ml-xl-4 ml-3">
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">13 <span
+                                                    class="text-paragraph">
+                                                    J.
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">9 <span
+                                                    class="text-paragraph">
+                                                    H
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">17 <span
+                                                    class="text-paragraph">Min.
+                                                </span></h6>
+                                        </div>
+                                    </div>
+                                    <a href="#"
+                                        class="btn bg-red text-white font-weight-bold py-sm-2 py-1 px-3 px-sm-4 text-14px mb-1">Voir
+                                        deal</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 px-2 py-3">
+                        <div class="card rounded-10px border-0 overflow-hidden">
+                            <img src="./assets/images/bg.jpg" class="card-img-top" alt="card-img">
+                            <div class="card-body p-0">
+                                <h5 class="text-black font-weight-bolder border-l-6 pl-3 pt-3 pb-4">Lorem ipsum dolor
+                                    sit
+                                    amet,
+                                    consectetur
+                                    adipiscing elit </h5>
+                                <div class="px-sm-4 px-3 pb-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h4 class="text-red font-weight-bolder">-95%</h4>
+                                        <div class="d-flex align-items-center">
+                                            <del class="text-paragraph2">
+                                                <h5 class="text-paragraph2 font-weight-bolder mr-3">-2000 <span
+                                                        class="text-14px text-uppercase">dH</span></h5>
+                                            </del>
+                                            <h4 class="text-black font-weight-bolder">100 <span
+                                                    class="text-14px text-uppercase">dH</span> </h4>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-14px font-weight-semibold text-capitalize text-paragraph mb-5">um
+                                        dolor
+                                        sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-top px-4 py-2">
+                                    <div class="d-flex justify-content-center ml-xl-4 ml-3">
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">13 <span
+                                                    class="text-paragraph">
+                                                    J.
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">9 <span
+                                                    class="text-paragraph">
+                                                    H
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">17 <span
+                                                    class="text-paragraph">Min.
+                                                </span></h6>
+                                        </div>
+                                    </div>
+                                    <a href="#"
+                                        class="btn bg-red text-white font-weight-bold py-sm-2 py-1 px-3 px-sm-4 text-14px mb-1">Voir
+                                        deal</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 px-2 py-3">
+                        <div class="card rounded-10px border-0 overflow-hidden">
+                            <img src="./assets/images/bg.jpg" class="card-img-top" alt="card-img">
+                            <div class="card-body p-0">
+                                <h5 class="text-black font-weight-bolder border-l-6 pl-3 pt-3 pb-4">Lorem ipsum dolor
+                                    sit
+                                    amet,
+                                    consectetur
+                                    adipiscing elit </h5>
+                                <div class="px-sm-4 px-3 pb-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h4 class="text-red font-weight-bolder">-95%</h4>
+                                        <div class="d-flex align-items-center">
+                                            <del class="text-paragraph2">
+                                                <h5 class="text-paragraph2 font-weight-bolder mr-3">-2000 <span
+                                                        class="text-14px text-uppercase">dH</span></h5>
+                                            </del>
+                                            <h4 class="text-black font-weight-bolder">100 <span
+                                                    class="text-14px text-uppercase">dH</span> </h4>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-14px font-weight-semibold text-capitalize text-paragraph mb-5">um
+                                        dolor
+                                        sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-top px-4 py-2">
+                                    <div class="d-flex justify-content-center ml-xl-4 ml-3">
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">13 <span
+                                                    class="text-paragraph">
+                                                    J.
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">9 <span
+                                                    class="text-paragraph">
+                                                    H
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">17 <span
+                                                    class="text-paragraph">Min.
+                                                </span></h6>
+                                        </div>
+                                    </div>
+                                    <a href="#"
+                                        class="btn bg-red text-white font-weight-bold py-sm-2 py-1 px-3 px-sm-4 text-14px mb-1">Voir
+                                        deal</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 px-2 py-3">
+                        <div class="card rounded-10px border-0 overflow-hidden">
+                            <img src="./assets/images/bg.jpg" class="card-img-top" alt="card-img">
+                            <div class="card-body p-0">
+                                <h5 class="text-black font-weight-bolder border-l-6 pl-3 pt-3 pb-4">Lorem ipsum dolor
+                                    sit
+                                    amet,
+                                    consectetur
+                                    adipiscing elit </h5>
+                                <div class="px-sm-4 px-3 pb-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <h4 class="text-red font-weight-bolder">-95%</h4>
+                                        <div class="d-flex align-items-center">
+                                            <del class="text-paragraph2">
+                                                <h5 class="text-paragraph2 font-weight-bolder mr-3">-2000 <span
+                                                        class="text-14px text-uppercase">dH</span></h5>
+                                            </del>
+                                            <h4 class="text-black font-weight-bolder">100 <span
+                                                    class="text-14px text-uppercase">dH</span> </h4>
+
+                                        </div>
+                                    </div>
+                                    <p class="text-14px font-weight-semibold text-capitalize text-paragraph mb-5">um
+                                        dolor
+                                        sit amet,
+                                        consectetur adipiscing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud.</p>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-top px-4 py-2">
+                                    <div class="d-flex justify-content-center ml-xl-4 ml-3">
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">13 <span
+                                                    class="text-paragraph">
+                                                    J.
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">9 <span
+                                                    class="text-paragraph">
+                                                    H
+                                                </span></h6>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h6 class="text-black text-12px font-weight-semibold">17 <span
+                                                    class="text-paragraph">Min.
+                                                </span></h6>
+                                        </div>
+                                    </div>
+                                    <a href="#"
+                                        class="btn bg-red text-white font-weight-bold py-sm-2 py-1 px-3 px-sm-4 text-14px mb-1">Voir
+                                        deal</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cards End Staet -->
             </div>
         </main>
         <!-- Main Section End -->
 
+
+        <!-- Footer Section Start -->
+        <footer class="bg-dark-footer position-relative pt-5 pt-lg-4">
+            <div class="position-absolute client-list px-4 mx-auto">
+                <div class="bg-white rounded-10px px-4 py-2 d-flex align-items-center shadow-white-md">
+                    <div class="">
+                        <img src="./assets/images/wafacash.png" alt="" class="w-100" style="max-width: 118px;">
+                    </div>
+                    <div class="">
+                        <img src="./assets/images/moneygram.png" alt="" class="w-100" style="max-width: 177px;">
+                    </div>
+                    <div class="">
+                        <img src="./assets/images/paypal.png" alt="" class="w-100" style="max-width: 55px;">
+                    </div>
+                    <div class="">
+                        <img src="./assets/images/visa-mastercard.png" alt="" class="w-100" style="max-width: 143px;">
+                    </div>
+                </div>
+            </div>
+            <div class="container pb-2 pt-5 py-md-5 px-4">
+                <div class="mb-4 d-flex justify-content-md-start justify-content-center">
+                    <img src="./assets/images/logo.png" alt="" class="footer-logo">
+                </div>
+                <div class="row mb-5">
+                    <div class="col-xl-5 col-md-8 mr-xl-5 py-3">
+                        <div class="border-4 rounded-10px py-4 px-3">
+                            <div class="d-md-flex text-center text-md-left mb-md-4 pb-3">
+                                <div class="mr-xl-4 mr-md-3 mb-4 mb-md-0">
+                                    <svg width=" 80" height="93" viewBox="0 0 80 93" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M30 37.781c0-3.21-2.24-5.812-5-5.812h-2.5c-5.523 0-10 5.204-10 11.625v8.718c0 6.422 4.477 11.626 10 11.626H25c2.76 0 5-2.603 5-5.813V37.781zm27.5 26.157c5.523 0 10-5.205 10-11.626v-8.718c0-6.421-4.477-11.625-10-11.625H55c-2.76 0-5 2.603-5 5.812v20.344c0 3.21 2.24 5.813 5 5.813h2.5zM40 0C17.684 0 .716 21.584 0 46.5v2.906c0 1.606 1.119 2.907 2.5 2.907H5c1.381 0 2.5-1.301 2.5-2.907V46.5C7.5 25.668 22.08 8.719 40 8.719S72.5 25.668 72.5 46.5h-.019c.013.441.019 30.102.019 30.102 0 4.24-2.958 7.68-6.606 7.68H50c0-4.816-3.358-8.72-7.5-8.72h-5c-4.142 0-7.5 3.904-7.5 8.72C30 89.096 33.358 93 37.5 93h28.394C73.684 93 80 85.658 80 76.602V46.5C79.284 21.584 62.316 0 40 0z"
+                                            fill="#fff" />
+                                    </svg>
+                                </div>
+                                <div class="">
+                                    <h6 class="text-white font-weight-black mb-3">CONTACTEZ NOS SPECIALISTES DE VOYAGES
+                                        AU
+                                    </h6>
+                                    <h4 class="text-white font-weight-black mb-3">06 33 99 11 99 / 06 33 66 33 11
+                                    </h4>
+                                    <h6 class="text-white font-weight-black mb-0">du Lundi au Samedi de 09h à 18h
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="d-md-flex align-items-center text-md-left text-center">
+                                <h6 class="text-white font-weight-bold text-nowrap ">ABONNEZ-VOUS</h6>
+                                <div class="w-100">
+                                    <form action="" class="form-row d-flex">
+                                        <div class="col-md-10 pl-md-3 p-2 pr-md-1 pr-lg-2">
+                                            <input type="text" placeholder="Votre adresse email"
+                                                class="form-control bg-white">
+                                        </div>
+                                        <div class="col-md-2 p-2 pr-md-1 p-lg-2">
+                                            <button type="submit" class="btn bg-red text-white px-md-3 px-5 h5"><i
+                                                    class="fab fa-telegram-plane"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-4 pl-xl-5 py-3">
+                        <h5 class="text-white font-weight-bold mb-4"> ALL CATEGORIES</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#"> All Deals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">Hotels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">Activities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">Spa Packages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">Hotel Day Packages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">Restaurants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">Fitness</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">Rodrigues</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 pl-xl-5 py-3">
+                        <h5 class="text-white font-weight-bold mb-4">ADDITIONAL INFORMATION</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">How does it work?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">Frequently Asked Questions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">Deals.mu loyalty program</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 py-0 text-paragraph2" href="#">Promote your Business on BTP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="text-white text-center pt-5">All rights reserved © Copyright 2021</p>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
     </div>
 
 
@@ -415,7 +913,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -423,7 +921,34 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script> -->
+
+
+    <!-- RTL BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js"
+        integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- Custom Script -->
+    <script>
+        $(window).click(function (e) {
+            if ($(".navbar-collapse").hasClass("show")) {
+                $('.navbar-collapse').removeClass("show");
+                e.preventDefault();
+            }
+        });
+        $('.navbar-collapse').click(function (event) {
+            event.stopPropagation();
+        });
+    </script>
 </body>
 
 </html>
