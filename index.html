@@ -1,6 +1,7 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
-<!-- <html lang="en" dir="ltr"> -->
+<!-- Active TAG When RTL/LTR Mode Change -->
+<!-- <html lang="ar" dir="rtl"> -->
+<html lang="en" dir="ltr">
 
 <head>
     <title>Title</title>
@@ -15,20 +16,29 @@
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> -->
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Active CDN When LTR Mode on -->
+    <!-- LTR Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Active CDN When RTL Mode on -->
     <!-- RTL Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
-        integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
+        integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous"> -->
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div class="bg-clip pt-5">
+    <!-- Change CLass with rtl-mode and ltr mode -->
+    <div class="bg-clip pt-5 overflow-hidden ltr-mode">
         <!-- Social Icon Start -->
         <div class="position-fixed social-icon d-flex align-items-center">
             <div class="social-desk mobile-social p-2">
@@ -82,7 +92,7 @@
 
             <!-- Navbar Collapse Menu Start -->
             <div class="navbar-collapse collapse position-absolute" id="navtoggle">
-                <div class="bg-white border-bl p-4 collapse-nav ml-0">
+                <div class="bg-white p-4 collapse-nav ml-0">
                     <ul class="nav flex-column mb-4">
                         <li class="nav-item mb-3">
                             <span class="nav-link font-weight-bold">Home </span>
@@ -274,88 +284,190 @@
         <main class="container py-2 py-sm-3 py-lg-4 px-sm-3 px-lg-4 mb-5">
             <div class="bg-glass p-2 p-sm-3 px-md-4 py-md-4">
                 <!-- Hero Section Start -->
-                <div class="card hero-card border-0 mb-4">
-                    <div class="row no-gutters">
-                        <div class="col-xl-8 col-lg-7 col-md-6">
-                            <img src="./assets/images/hero-img.jpg" class="card-img rounded-0 hero-img-feat"
-                                alt="Hero Image">
-                            <div class="card-img-overlay rounded-0 card-img-text pb-2 pb-md-3 px-2 px-sm-3">
-                                <p class="card-text text-12px text-white text-uppercase font-weight-bold mb-0 pb-lg-3">
-                                    porttitor, a
-                                    dapibus est
-                                    egestas. Aenean
-                                    tempus sem
-                                    Nullam purus
-                                    sem, rutrum at semper condimentum, efficitur viverra ipsum. Curabitur tristique erat
-                                    a ante vitae tincidunt fringilla. </p>
+                <div class="mb-4 owl-carousel position-relative hover-nav">
+                    <div class="card hero-card border-0">
+                        <div class="row no-gutters">
+                            <div class="col-xl-8 col-lg-7 col-md-6">
+                                <img src="./assets/images/hero-img.jpg" class="card-img rounded-0 hero-img-feat"
+                                    alt="Hero Image">
+                                <div class="card-img-overlay rounded-0 card-img-text bg-red pb-2 pb-md-3 px-2 px-sm-3">
+                                    <p
+                                        class="card-text text-12px text-white text-uppercase font-weight-bold mb-0 pb-lg-3">
+                                        porttitor, a
+                                        dapibus est
+                                        egestas. Aenean
+                                        tempus sem
+                                        Nullam purus
+                                        sem, rutrum at semper condimentum, efficitur viverra ipsum. Curabitur tristique
+                                        erat
+                                        a ante vitae tincidunt fringilla. </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 col-md-6">
+                                <div class="card-body">
+                                    <h4 class="text-black font-weight-bolder">Sirenis Punta Cana Resort Casino</h4>
+                                    <p class="text-14px text-paragraph pb-3">Kingscliff: From 4230 DH for a 3 night
+                                        Romantic
+                                        Stay
+                                        with Bottle of
+                                        wine...</p>
+                                    <div class="d-flex justify-content-between pb-4">
+                                        <h4 class="text-black font-weight-bolder">4000 DH</h4>
+                                        <button
+                                            class="btn bg-red text-white text-10px text-uppercase font-weight-bolder">Voir
+                                            le
+                                            Deal</button>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between bg-light-gray rounded px-2 px-lg-4 py-3 mb-4">
+                                        <div class="text-center px-2">
+                                            <h6 class="text-black font-weight-bolder text-uppercase mb-1">4000 DH</h6>
+                                            <p class="text-12px text-paragraph text-uppercase mb-0">VALUE</p>
+                                        </div>
+                                        <div class="text-center px-2">
+                                            <h6 class="text-black font-weight-bolder text-uppercase mb-1">59%</h6>
+                                            <p class="text-12px text-paragraph text-uppercase mb-0">DISCOUNT</p>
+                                        </div>
+                                        <div class="text-center px-2">
+                                            <h6 class="text-black font-weight-bolder text-uppercase mb-1">8500 DH</h6>
+                                            <p class="text-12px text-paragraph text-uppercase mb-0">SAVINGS</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-14px text-paragraph text-uppercase font-weight-semibold text-center">
+                                        HURRY UP ONLY A
+                                        FEW DEALS LEFT</p>
+
+                                    <div class="d-flex justify-content-center mb-4">
+                                        <div class="mx-2">
+                                            <h5 class="text-black font-weight-semibold">13 <span class="text-paragraph">
+                                                    J.
+                                                </span></h5>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h5 class="text-black font-weight-semibold">9 <span class="text-paragraph">
+                                                    H
+                                                </span></h5>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h5 class="text-black font-weight-semibold">17 <span
+                                                    class="text-paragraph">Min.
+                                                </span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
+                                            <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
+                                                    class="fas fa-user"></i></span>
+                                            <p class="text-10px text-black font-weight-bold text-capitalize mb-0">for 2
+                                                <span class="text-paragraph">Person</span>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
+                                            <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
+                                                    class="fas fa-angle-double-up"></i></span>
+                                            <p class="text-10px text-black font-weight-bold text-capitalize mb-0">169
+                                                <span class="text-paragraph">Bought</span>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
+                                            <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
+                                                    class="fas fa-smile"></i></span>
+                                            <p class="text-10px text-paragraph font-weight-bold text-capitalize mb-0">
+                                                Offer
+                                                success</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-5 col-md-6">
-                            <div class="card-body">
-                                <h4 class="text-black font-weight-bolder">Sirenis Punta Cana Resort Casino</h4>
-                                <p class="text-14px text-paragraph pb-3">Kingscliff: From 4230 DH for a 3 night Romantic
-                                    Stay
-                                    with Bottle of
-                                    wine...</p>
-                                <div class="d-flex justify-content-between pb-4">
-                                    <h4 class="text-black font-weight-bolder">4000 DH</h4>
-                                    <button
-                                        class="btn bg-red text-white text-10px text-uppercase font-weight-bolder">Voir
-                                        le
-                                        Deal</button>
-                                </div>
+                    </div>
+                    <div class="card hero-card border-0">
+                        <div class="row no-gutters">
+                            <div class="col-xl-8 col-lg-7 col-md-6">
+                                <img src="./assets/images/bg.jpg" class="card-img rounded-0 hero-img-feat"
+                                    alt="Hero Image">
                                 <div
-                                    class="d-flex justify-content-between bg-light-gray rounded px-2 px-lg-4 py-3 mb-4">
-                                    <div class="text-center px-2">
-                                        <h6 class="text-black font-weight-bolder text-uppercase mb-1">4000 DH</h6>
-                                        <p class="text-12px text-paragraph text-uppercase mb-0">VALUE</p>
-                                    </div>
-                                    <div class="text-center px-2">
-                                        <h6 class="text-black font-weight-bolder text-uppercase mb-1">59%</h6>
-                                        <p class="text-12px text-paragraph text-uppercase mb-0">DISCOUNT</p>
-                                    </div>
-                                    <div class="text-center px-2">
-                                        <h6 class="text-black font-weight-bolder text-uppercase mb-1">8500 DH</h6>
-                                        <p class="text-12px text-paragraph text-uppercase mb-0">SAVINGS</p>
-                                    </div>
+                                    class="card-img-overlay rounded-0 card-img-text bg-success pb-2 pb-md-3 px-2 px-sm-3">
+                                    <p
+                                        class="card-text text-12px text-white text-uppercase font-weight-bold mb-0 pb-lg-3">
+                                        um dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                                 </div>
-                                <p class="text-14px text-paragraph text-uppercase font-weight-semibold text-center">
-                                    HURRY UP ONLY A
-                                    FEW DEALS LEFT</p>
+                            </div>
+                            <div class="col-xl-4 col-lg-5 col-md-6">
+                                <div class="card-body">
+                                    <h4 class="text-black font-weight-bolder">Lorem ipsum dolor sit amet,
+                                    </h4>
+                                    <p class="text-14px text-paragraph pb-3">Kingscliff: From 4230 DH for a 3 night
+                                        Romantic
+                                        Stay
+                                        with Bottle of
+                                        wine...</p>
+                                    <div class="d-flex justify-content-between pb-4">
+                                        <h4 class="text-black font-weight-bolder">5000 DH</h4>
+                                        <button
+                                            class="btn bg-red text-white text-10px text-uppercase font-weight-bolder">Voir
+                                            le
+                                            Deal</button>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-between bg-light-gray rounded px-2 px-lg-4 py-3 mb-4">
+                                        <div class="text-center px-2">
+                                            <h6 class="text-black font-weight-bolder text-uppercase mb-1">5000 DH</h6>
+                                            <p class="text-12px text-paragraph text-uppercase mb-0">VALUE</p>
+                                        </div>
+                                        <div class="text-center px-2">
+                                            <h6 class="text-black font-weight-bolder text-uppercase mb-1">70%</h6>
+                                            <p class="text-12px text-paragraph text-uppercase mb-0">DISCOUNT</p>
+                                        </div>
+                                        <div class="text-center px-2">
+                                            <h6 class="text-black font-weight-bolder text-uppercase mb-1">6500 DH</h6>
+                                            <p class="text-12px text-paragraph text-uppercase mb-0">SAVINGS</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-14px text-paragraph text-uppercase font-weight-semibold text-center">
+                                        HURRY UP ONLY A
+                                        FEW DEALS LEFT</p>
 
-                                <div class="d-flex justify-content-center mb-4">
-                                    <div class="mx-2">
-                                        <h5 class="text-black font-weight-semibold">13 <span class="text-paragraph"> J.
-                                            </span></h5>
+                                    <div class="d-flex justify-content-center mb-4">
+                                        <div class="mx-2">
+                                            <h5 class="text-black font-weight-semibold">13 <span class="text-paragraph">
+                                                    J.
+                                                </span></h5>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h5 class="text-black font-weight-semibold">9 <span class="text-paragraph">
+                                                    H
+                                                </span></h5>
+                                        </div>
+                                        <div class="mx-2">
+                                            <h5 class="text-black font-weight-semibold">17 <span
+                                                    class="text-paragraph">Min.
+                                                </span></h5>
+                                        </div>
                                     </div>
-                                    <div class="mx-2">
-                                        <h5 class="text-black font-weight-semibold">9 <span class="text-paragraph"> H
-                                            </span></h5>
-                                    </div>
-                                    <div class="mx-2">
-                                        <h5 class="text-black font-weight-semibold">17 <span class="text-paragraph">Min.
-                                            </span></h5>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
-                                        <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
-                                                class="fas fa-user"></i></span>
-                                        <p class="text-10px text-black font-weight-bold text-capitalize mb-0">for 2
-                                            <span class="text-paragraph">Person</span>
-                                        </p>
-                                    </div>
-                                    <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
-                                        <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
-                                                class="fas fa-angle-double-up"></i></span>
-                                        <p class="text-10px text-black font-weight-bold text-capitalize mb-0">169 <span
-                                                class="text-paragraph">Bought</span> </p>
-                                    </div>
-                                    <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
-                                        <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
-                                                class="fas fa-smile"></i></span>
-                                        <p class="text-10px text-paragraph font-weight-bold text-capitalize mb-0">Offer
-                                            success</p>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
+                                            <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
+                                                    class="fas fa-user"></i></span>
+                                            <p class="text-10px text-black font-weight-bold text-capitalize mb-0">for 2
+                                                <span class="text-paragraph">Person</span>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
+                                            <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
+                                                    class="fas fa-angle-double-up"></i></span>
+                                            <p class="text-10px text-black font-weight-bold text-capitalize mb-0">169
+                                                <span class="text-paragraph">Bought</span>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex align-items-center px-1 px-sm-2 px-xl-3">
+                                            <span class="text-paragraph text-12px mr-1 mr-sm-2 d-lg-block d-none"><i
+                                                    class="fas fa-smile"></i></span>
+                                            <p class="text-10px text-paragraph font-weight-bold text-capitalize mb-0">
+                                                Offer
+                                                success</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -912,34 +1024,52 @@
 
 
 
-    <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script> -->
 
-
-    <!-- RTL BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
+
+    <!-- Active script when RTL/LTR mode CHange -->
+    <!-- LTR Bootstrap -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script> -->
+
+    <!-- RTL BOOTSTRAP -->
     <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js"
         integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK"
         crossorigin="anonymous"></script>
 
 
+    <!-- Owl JS -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
 
     <!-- Custom Script -->
     <script>
+
+
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                rtl: false,   // Set rtl:true when rtl mode on
+                margin: 10,
+                center: true,
+                loop: true,
+                mouseDrag: false,
+                touchDrag: false,
+                autoWidth: false,
+                dots: false,
+                nav: true,
+                animateIn: 'animate__fadeIn animate__faster',
+                animateOut: 'animate__fadeOut animate__faster',
+                items: 1
+            })
+        });
+
         // Navbar Collapse Hide Outside click
         $(window).click(function (e) {
             if ($(".navbar-collapse").hasClass("show")) {
