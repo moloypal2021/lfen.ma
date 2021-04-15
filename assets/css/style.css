@@ -2,7 +2,41 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
-/* Backround Color */
+/* ****** Custom Utility ******* */
+
+.outline-none {
+    outline: none !important;
+}
+
+/* ========= Shadow ====== */
+
+.shadow-white-md {
+    box-shadow: 0px 0px 9px 3px rgba(255, 255, 255, 0.25);
+}
+
+/* ======== Border ======== */
+
+.border-bl {
+    border-bottom-left-radius: 16px;
+}
+
+.border-l-6 {
+    border-left: 6px solid #F44336;
+}
+
+.border-4 {
+    border: 4px solid #ffff;
+}
+
+/* ========= Border Radius ========= */
+
+.rounded-10px {
+    border-radius: 10px;
+}
+
+/* ********** color ********** */
+
+/* ====== Backround Color =========== */
 
 .bg-red {
     background-color: #F44336;
@@ -33,7 +67,7 @@ body {
     background: #0A223D;
 }
 
-/* Text Color */
+/* ======== Text Color ===========*/
 
 .text-paragraph {
     color: #878787;
@@ -56,13 +90,9 @@ body {
     font-weight: 600;
 }
 
-/* Shadow */
+/* ************ Font ************ */
 
-.shadow-white-md {
-    box-shadow: 0px 0px 9px 3px rgba(255, 255, 255, 0.25);
-}
-
-/* Font size */
+/* ========== Responsive Font size ============ */
 
 .text-10px {
     font-size: 10px !important;
@@ -157,7 +187,7 @@ body {
     }
 }
 
-/* Font-weight */
+/* ========= Font-weight =========== */
 
 .font-weight-semibold {
     font-weight: 600 !important;
@@ -171,7 +201,9 @@ body {
     font-weight: 900 !important;
 }
 
-/* Bootstrap Container Customization  */
+/* ********* Custom Css ******** */
+
+/* ======== Bootstrap Container Customization ============ */
 
 @media (min-width:1360px) {
     .container {
@@ -185,7 +217,36 @@ body {
     }
 }
 
-/* Collapse Nav Menu */
+/* ******** Nav Bar Section ******** */
+
+/* ===== Badge =========*/
+
+.notification {
+    position: relative;
+    display: inline-block;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:575px) {
+    .notification .badge {
+        top: -6px;
+        right: -6px;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* === Collapse Nav Menu === */
 
 .collapse-nav {
     width: max-content;
@@ -220,7 +281,7 @@ header .nav .nav-item .nav-link {
     }
 }
 
-/* Nav Icons */
+/* ==== Nav Icons ======= */
 
 .nav-icon svg {
     width: 24px;
@@ -232,27 +293,7 @@ header .nav .nav-item .nav-link {
     }
 }
 
-/* Border */
-
-.border-bl {
-    border-bottom-left-radius: 16px;
-}
-
-.border-l-6 {
-    border-left: 6px solid #F44336;
-}
-
-.border-4 {
-    border: 4px solid #ffff;
-}
-
-/* Border Radius*/
-
-.rounded-10px {
-    border-radius: 10px;
-}
-
-/* Brand Logo */
+/* ====== Brand Logo ======*/
 
 .brand-logo img {
     max-width: 196px;
@@ -264,57 +305,7 @@ header .nav .nav-item .nav-link {
     }
 }
 
-/* ========= Footer ========= */
-
-/* Footer Logo */
-
-.footer-logo {
-    max-width: 196px;
-}
-
-@media (max-width: 575px) {
-    .footer-logo {
-        max-width: 130px;
-    }
-}
-
-/* Client Icon  */
-
-.client-list {
-    max-width: 555px !important;
-    top: -28px;
-    right: 0;
-    left: 0;
-}
-
-/* Badge */
-
-.notification {
-    position: relative;
-    display: inline-block;
-}
-
-.notification .badge {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 26px;
-    height: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media(max-width:575px) {
-    .notification .badge {
-        top: -6px;
-        right: -6px;
-        width: 18px;
-        height: 18px;
-    }
-}
-
-/* Hero Section */
+/* =========== Hero Section =========== */
 
 .hero-card {
     border-radius: 10px;
@@ -353,9 +344,30 @@ header .nav .nav-item .nav-link {
     }
 }
 
-.outline-none {
-    outline: none !important;
+/* ========= Footer Section ========= */
+
+/* Footer Logo */
+
+.footer-logo {
+    max-width: 196px;
 }
+
+@media (max-width: 575px) {
+    .footer-logo {
+        max-width: 130px;
+    }
+}
+
+/* Client Icon  */
+
+.client-list {
+    max-width: 555px !important;
+    top: -28px;
+    right: 0;
+    left: 0;
+}
+
+/******** Social Icon **********/
 
 .social-icon {
     left: 0;
@@ -364,7 +376,39 @@ header .nav .nav-item .nav-link {
     z-index: 10001;
 }
 
-.social-icon .bg-white {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+@media (min-width:576px) {
+    .social-desk {
+        background-color: #ffff;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media (max-width:575px) {
+    .social-icon {
+        left: 6px;
+    }
+    .social-icon .mobile-social .nav-item i {
+        margin-bottom: 8px;
+        background-color: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        filter: drop-shadow(-2px 4px 7px rgba(0, 0, 0, 0.25));
+    }
+    .social-icon .mobile-social .nav-item i.fa-whatsapp {
+        background-color: #0CD714;
+        color: #ffff;
+    }
+    .social-icon .mobile-social .nav-item i.fa-comments {
+        background-color: #F44336;
+        color: #ffff;
+    }
+    .social-icon .mobile-social .nav-item .nav-link i {
+        margin-bottom: 0;
+        font-size: 22px;
+    }
 }

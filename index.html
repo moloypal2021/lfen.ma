@@ -30,23 +30,23 @@
     <div class="bg-clip">
         <!-- Social Icon Start -->
         <div class="position-fixed social-icon d-flex align-items-center">
-            <div class="bg-white p-2">
+            <div class="social-desk mobile-social p-2">
                 <ul class="nav flex-column align-items-center">
-                    <li class="nav-item ">
+                    <li class="nav-item mob-item d-sm-block d-none">
                         <a class="nav-link p-0 h1" href="#" style="color: #0CD714;"><i class="fab fa-whatsapp"></i></a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item mob-item d-sm-block d-none">
                         <a class="nav-link p-0 h1" href="#" style="color: #3B5998;"><i
                                 class="fab fa-facebook-square"></i></a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item mob-item d-sm-block d-none">
                         <a class="nav-link p-0 h1" href="#" style="color: #C13584;"><i class="fab fa-instagram"></i></a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item mob-item d-sm-block d-none">
                         <a class="nav-link p-0 h1" href="#" style="color: #FF0000;"><i class="fab fa-youtube"></i></a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link p-0 h1" href="#" style="color: #000;"><i class="fal fa-comments"></i></a>
+                    <li class="nav-item" id="toggle-social">
+                        <p class="nav-link p-0 h1" style="color: #000;"><i class="fal fa-comments"></i></p>
                     </li>
                 </ul>
             </div>
@@ -947,6 +947,21 @@
         });
         $('.navbar-collapse').click(function (event) {
             event.stopPropagation();
+        });
+
+
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $("#toggle-social").click(function () {
+                    if ($(".mob-item").hasClass("d-none")) {
+                        $(".mob-item").addClass("d-block").removeClass("d-none");
+                    } else {
+                        $(".mob-item").addClass("d-none").removeClass("d-block");
+                    }
+                });
+
+            });
+
         });
     </script>
 </body>
