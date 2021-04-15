@@ -16,6 +16,10 @@ body {
 
 /* ======== Border ======== */
 
+.border-t-3 {
+    border-top: 3px solid #000;
+}
+
 .border-bl {
     border-bottom-left-radius: 16px;
 }
@@ -34,7 +38,19 @@ body {
     border-radius: 10px;
 }
 
+/* ==== letter Spacing ==== */
+
+.tracking-12 {
+    letter-spacing: 0.08em;
+}
+
 /* ********** color ********** */
+
+/* ========== Border Color ========= */
+
+.border-red {
+    border-color: #F44336;
+}
 
 /* ====== Backround Color =========== */
 
@@ -219,6 +235,15 @@ body {
 
 /* ******** Nav Bar Section ******** */
 
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000000;
+}
+
 /* ===== Badge =========*/
 
 .notification {
@@ -344,6 +369,14 @@ header .nav .nav-item .nav-link {
     }
 }
 
+/* ============ Card Image ============== */
+
+.card-image-feat {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+
 /* ========= Footer Section ========= */
 
 /* Footer Logo */
@@ -386,7 +419,9 @@ header .nav .nav-item .nav-link {
 
 @media (max-width:575px) {
     .social-icon {
+        top: auto;
         left: 6px;
+        bottom: 16px;
     }
     .social-icon .mobile-social .nav-item i {
         margin-bottom: 8px;
@@ -394,8 +429,8 @@ header .nav .nav-item .nav-link {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 36px;
-        height: 36px;
+        width: 48px;
+        height: 48px;
         border-radius: 100%;
         filter: drop-shadow(-2px 4px 7px rgba(0, 0, 0, 0.25));
     }
@@ -409,6 +444,6 @@ header .nav .nav-item .nav-link {
     }
     .social-icon .mobile-social .nav-item .nav-link i {
         margin-bottom: 0;
-        font-size: 22px;
+        font-size: 24px;
     }
 }
