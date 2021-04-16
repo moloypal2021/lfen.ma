@@ -4,6 +4,12 @@ body {
 
 /* ****** Custom Utility ******* */
 
+/* ============= max-height ============= */
+
+.max-h-432px {
+    max-height: 432px;
+}
+
 .outline-none {
     outline: none !important;
 }
@@ -24,8 +30,12 @@ body {
     border-bottom-left-radius: 16px;
 }
 
-.border-l-6 {
+.ltr-mode .border-l-6 {
     border-left: 6px solid #F44336;
+}
+
+.rtl-mode .border-l-6 {
+    border-right: 6px solid #F44336;
 }
 
 .border-4 {
@@ -38,10 +48,21 @@ body {
     border-radius: 10px;
 }
 
+.rounded-bottom-0 {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 /* ==== letter Spacing ==== */
 
 .tracking-12 {
     letter-spacing: 0.08em;
+}
+
+/* ========== Object ======= */
+
+.object-cover {
+    object-fit: cover;
 }
 
 /* ********** color ********** */
@@ -517,13 +538,6 @@ header .nav .nav-item .nav-link {
 }
 
 @media (min-width: 568px) {
-    /* .hover-nav {
-        overflow: hidden;
-        transition: .3s ease-in-out;
-    }
-    .hover-nav:hover {
-        overflow: visible;
-    } */
     .ltr-mode .owl-nav .owl-prev {
         transform: translateX(-150px);
         opacity: 0;
@@ -548,4 +562,74 @@ header .nav .nav-item .nav-link {
         transform: translateX(0px);
         opacity: 1;
     }
+}
+
+/* Tag  */
+
+.tag {
+    background: #E7E7E7;
+    border-radius: 3px 0 0 3px;
+    color: #000000;
+    font-weight: 600;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+}
+
+.tag::before {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+.tag::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #E7E7E7;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tag:hover, .tag.active {
+    background-color: #F44336;
+    color: white;
+}
+
+.tag:hover::after, .tag.active::after {
+    border-left-color: #F44336;
+}
+
+/* commission top left */
+
+.commission {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ltr-mode .commission {
+    top: -15px;
+    left: -15px;
+}
+
+.rtl-mode .commission {
+    top: -15px;
+    right: -15px;
 }
