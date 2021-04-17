@@ -653,6 +653,62 @@ header .nav .nav-item .nav-link {
 
 /* ====== Custom Table ========= */
 
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: #F9F9F9;
+.border-table {
+    border-top: 1px solid #D4D4D4;
+    border-left: 1px solid #D4D4D4;
+}
+
+.table-box-border {
+    border-bottom: 1px solid #D4D4D4;
+    border-right: 1px solid #D4D4D4;
+}
+
+/* ======= HasURL Slider Image ========== */
+
+.hasurl-img-feat {
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .hasurl-img-feat {
+        height: 470px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hasurl-img-feat {
+        height: 370px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hasurl-img-feat {
+        height: 240px;
+    }
+}
+
+.hasurl-img-feat2 {
+    width: 100%;
+    height: 96px;
+    object-fit: cover;
+}
+
+@media (max-width: 991px) {
+    .hasurl-img-feat2 {
+        height: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hasurl-img-feat2 {
+        height: 70px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hasurl-img-feat2 {
+        height: 60px;
+    }
 }
