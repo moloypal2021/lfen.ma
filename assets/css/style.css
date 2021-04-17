@@ -73,6 +73,10 @@ body {
     border-color: #F44336;
 }
 
+.border-table {
+    border-color: #DADADA;
+}
+
 /* ====== Backround Color =========== */
 
 .bg-red {
@@ -143,6 +147,10 @@ body {
     font-size: 14px;
 }
 
+.text-48px {
+    font-size: 48px;
+}
+
 @media(max-width: 991px) {
     h1, .h1 {
         font-size: 36px;
@@ -167,6 +175,9 @@ body {
     }
     .text-14px {
         font-size: 13px;
+    }
+    .text-48px {
+        font-size: 44px;
     }
 }
 
@@ -195,6 +206,9 @@ body {
     .text-14px {
         font-size: 12px;
     }
+    .text-48px {
+        font-size: 40px;
+    }
 }
 
 @media(max-width: 575px) {
@@ -221,6 +235,9 @@ body {
     }
     .text-14px {
         font-size: 10px;
+    }
+    .text-48px {
+        font-size: 36px;
     }
 }
 
@@ -632,4 +649,10 @@ header .nav .nav-item .nav-link {
 .rtl-mode .commission {
     top: -15px;
     right: -15px;
+}
+
+/* ====== Custom Table ========= */
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F9F9F9;
 }
