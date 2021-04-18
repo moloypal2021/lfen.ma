@@ -10,6 +10,14 @@ body {
     max-height: 432px;
 }
 
+/* ============ Max Width =========== */
+
+.max-w-1050px {
+    max-width: 1050px;
+}
+
+/* ====== Outline ==== */
+
 .outline-none {
     outline: none !important;
 }
@@ -81,6 +89,10 @@ body {
 
 .bg-red {
     background-color: #F44336;
+}
+
+.bg-green {
+    background-color: #7AC755;
 }
 
 .bg-clip {
