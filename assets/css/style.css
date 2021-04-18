@@ -167,6 +167,10 @@ body {
     font-size: 48px;
 }
 
+h5, .h5 {
+    font-size: 18px !important;
+}
+
 @media(max-width: 991px) {
     h1, .h1 {
         font-size: 36px;
