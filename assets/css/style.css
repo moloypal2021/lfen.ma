@@ -95,6 +95,10 @@ body {
     background-color: #7AC755;
 }
 
+.bg-blue {
+    background-color: #001AFF;
+}
+
 .bg-clip {
     background: url('../images/bg.jpg');
     background-size: cover;
