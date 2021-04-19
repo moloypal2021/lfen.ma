@@ -39,6 +39,7 @@
 <body>
     <!-- Change CLass with rtl-mode and ltr mode -->
     <div class="bg-clip pt-5 overflow-hidden ltr-mode">
+
         <!-- Social Icon Start -->
         <div class="position-fixed social-icon d-flex align-items-center">
             <div class="social-desk mobile-social p-2">
@@ -298,8 +299,75 @@
                                         class="h4 font-weight-bolder">DH</span>
                                 </h1>
                                 <div class="d-flex justify-content-center pb-4">
-                                    <button class="btn bg-red text-white h4 text-uppercase font-weight-bolder w-100">BUY
+                                    <button class="btn bg-red text-white h4 text-uppercase font-weight-bolder w-100"
+                                        data-toggle="modal" data-target="#staticBackdrop">BUY
                                         NOW</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade px-lg-5 px-4" id="staticBackdrop" data-backdrop="static"
+                                        data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-box-size">
+                                            <div class="modal-content p-lg-2 rounded-10px">
+                                                <div class="modal-header border-0 justify-content-end">
+                                                    <h5 class="modal-title text-black font-weight-bolder"
+                                                        id="staticBackdropLabel">Ajouter
+                                                        Au Panier</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="form-group">
+                                                                    <label class="text-14px text-black font-weight-bold"
+                                                                        for="Offre">Offre</label>
+                                                                    <input type="text"
+                                                                        class="form-control text-black font-weight-bold text-14px"
+                                                                        id="Offre"
+                                                                        placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscin">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-6">
+                                                                <div class="form-group">
+                                                                    <label class="text-14px text-black font-weight-bold"
+                                                                        for="Quantité">Quantité</label>
+                                                                    <select
+                                                                        class="form-control text-black font-weight-bold text-14px"
+                                                                        id="Quantité">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-6">
+                                                                <div class="form-group">
+                                                                    <label class="text-14px text-black font-weight-bold"
+                                                                        for="Quantité">Prix</label>
+                                                                    <input type="text"
+                                                                        class="form-control text-black font-weight-bold text-14px"
+                                                                        id="Quantité" placeholder="100 DH">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer border-0">
+                                                    <button type="button"
+                                                        class="btn bg-green text-white py-1 px-3 d-flex align-items-center"
+                                                        data-dismiss="modal"><span
+                                                            class="fas fa-plus h6 mr-1 mb-0"></span><span
+                                                            class="text-14px font-weight-bold mb-0">Continue</span></button>
+                                                    <button type="button"
+                                                        class="btn bg-red text-white py-1 px-3 d-flex align-items-center"><span
+                                                            class="fal fa-shopping-cart h6 mr-1 mb-0"></span><span
+                                                            class="text-14px font-weight-bold mb-0">Checkout</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div
                                     class="d-flex justify-content-between bg-light-gray rounded px-2 px-lg-4 py-3 mb-4">
