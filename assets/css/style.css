@@ -22,6 +22,11 @@ body {
     outline: none !important;
 }
 
+.outline-none:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 /* ========= Shadow ====== */
 
 .shadow-white-md {
@@ -742,4 +747,12 @@ header .nav .nav-item .nav-link {
     .modal-box-size {
         max-width: 770px;
     }
+}
+
+/* ============= Date Ranger ============= */
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: #F44336;
+    border-color: transparent;
+    color: #fff;
 }
