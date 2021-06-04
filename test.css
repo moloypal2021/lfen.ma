@@ -15,12 +15,7 @@ body {
 }
 
 .outline-none {
-    outline: none !important;
-}
-
-.outline-none:focus {
-    outline: none !important;
-    box-shadow: none !important;
+    outline: none!important
 }
 
 .shadow-white-md {
