@@ -974,3 +974,20 @@ h4 a, h4 a:hover, h4 a:visited {
         height: 180px;
     }
 }
+
+/* Dropdown Menu */
+
+@media (max-width: 575px) {
+    .dropdown2, .daterangepicker {
+        position: fixed !important;
+        top: auto !important;
+        left: 0px !important;
+        right: 0px !important;
+        bottom: 0px !important;
+        width: 100%;
+        transform: translate3d(0px, 0px, 0px) !important;
+    }
+    .drp-calendar {
+        margin: 0 auto !important;
+    }
+}
