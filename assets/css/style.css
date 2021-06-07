@@ -69,6 +69,14 @@ body {
     border-color: #f44336
 }
 
+.border-1px {
+    border-width: 1px !important;
+}
+
+.border-gray {
+    border-color: #9F9F9F !important;
+}
+
 .border-table {
     border-color: #dadada
 }
@@ -132,7 +140,11 @@ body {
 }
 
 .text-red {
-    color: red
+    color: #F44336;
+}
+
+.text-green {
+    color: #006D0B;
 }
 
 .hover\:text-black:hover {
@@ -989,5 +1001,11 @@ h4 a, h4 a:hover, h4 a:visited {
     }
     .drp-calendar {
         margin: 0 auto !important;
+    }
+}
+
+@media (min-width:992px) {
+    .border-lg-right {
+        border-right: 1px solid #9F9F9F !important;
     }
 }

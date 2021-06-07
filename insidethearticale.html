@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+    <!-- Date Range Picker  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/owl.theme.default.css">
@@ -38,7 +40,8 @@
 
 <body>
     <!-- Change CLass with rtl-mode and ltr mode -->
-    <div class="bg-clip pt-5 overflow-hidden ltr-mode">
+    <div class="bg-clip pt-5 overflow-hidden ltr-mode"
+        style=" background: url(https://testapp.lfen.ma/storage/background_photos/YbNCcvXpjoI6ZGaJnfmyMBlOwmouBJ8wVb9gBIRf.jpg) no-repeat center center fixed ; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;   background-size: cover;">
 
         <!-- Social Icon Start -->
         <div class="position-fixed social-icon d-flex align-items-center">
@@ -429,6 +432,231 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Selection Area Start -->
+
+                        <!-- Selction Viewing Area Start -->
+                        <div class="card bg-dark-footer rounded-10px mb-4">
+                            <div class="card-body px-3 py-2">
+                                <h5 class="text-white font-weight-bolder text-center mb-4">Paramètres selectionner</h5>
+                                <div class="d-flex mb-3">
+                                    <i class="fas fa-map-marker-alt h5 text-paragraph2 mr-3"></i>
+                                    <p class="text-white font-weight-bolder">Destination / Ville : Marrakech</p>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <i class="fas fa-calendar-check h5 text-paragraph2 mr-3"></i>
+                                    <p class="text-white font-weight-bolder">Du dimanche 31 mai</p>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <i class="fas fa-calendar-check h5 text-paragraph2 mr-3"></i>
+                                    <p class="text-white font-weight-bolder">Au Lun 01 juin</p>
+                                </div>
+                                <div class="d-flex mb-3">
+                                    <i class="fas fa-user h5 text-paragraph2 mr-3"></i>
+                                    <p class="text-white font-weight-bolder">2 adultes - 2 enfant - 2 chambre</p>
+                                </div>
+                                <div class="text-center pb-3">
+                                    <button class="btn bg-red text-white text-18px font-weight-bold px-5 py-2">Changer
+                                        paramètres <i class="fas fa-pencil-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Selction Viewing Area End -->
+
+                        <!-- Selction Editing Area Start -->
+                        <div class="card bg-dark-footer rounded-10px mb-4">
+                            <div class="card-body px-3 py-2">
+                                <h5 class="text-white font-weight-bolder text-center mb-4">Changer de destination</h5>
+                                <form>
+                                    <div class="form-group">
+                                        <label class="text-white" for="exampleInputEmail1">Destination / Ville</label>
+                                        <div class="input-group flex-nowrap rounded">
+                                            <div class="input-group-prepend"
+                                                style="margin-right: -2px;  border-radius: 4px;">
+                                                <span class="input-group-text bg-white text-paragraph"
+                                                    id="addon-wrapping"><i class="fas fa-map-marker-alt"></i></span>
+                                            </div>
+                                            <input type="text" name="terme" placeholder="Destination"
+                                                id="myAutocomplete" autocomplete="off"
+                                                class="form-control text-18px dropdown-toggle border-left-0 border-right-0 pl-0 outline-none"
+                                                data-toggle="dropdown" aria-expanded="true">
+                                            <div class="input-group-append"
+                                                style="margin-right: -2px; border-radius: 4px;">
+                                                <span class="input-group-text bg-white text-red " id="addon-wrapping"><i
+                                                        class="fas fa-angle-down"></i></span>
+                                            </div>
+                                            <div class="dropdown-menu w-full" style="min-width: 275px;"
+                                                aria-labelledby="myAutocomplete">
+                                                <p class="text-18px text-gray dropdown-item">D’autre destinations :</p>
+                                                <a href="#" class="dropdown-item d-flex align-items-center"> <i
+                                                        class="fas fa-map-marker-alt mr-3 text-paragraph h5 mb-0"></i>
+                                                    Marrakech</a>
+                                                <a href="#" class="dropdown-item d-flex align-items-center"> <i
+                                                        class="fas fa-map-marker-alt mr-3 text-paragraph h5 mb-0"></i>
+                                                    Agdir</a>
+                                                <a href="#" class="dropdown-item d-flex align-items-center"> <i
+                                                        class="fas fa-map-marker-alt mr-3 text-paragraph h5 mb-0"></i>
+                                                    Essaouira</a>
+                                                <a href="#" class="dropdown-item d-flex align-items-center"> <i
+                                                        class="fas fa-map-marker-alt mr-3 text-paragraph h5 mb-0"></i>
+                                                    Casablanca</a>
+                                                <a href="#" class="dropdown-item d-flex align-items-center"> <i
+                                                        class="fas fa-map-marker-alt mr-3 text-paragraph h5 mb-0"></i>
+                                                    Taghazout</a>
+                                                <a href="#" class="dropdown-item d-flex align-items-center"> <i
+                                                        class="fas fa-map-marker-alt mr-3 text-paragraph h5 mb-0"></i>
+                                                    Rabat</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-white" for="exampleInputEmail1">Du</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend"
+                                                style="margin-right: -2px;  border-radius: 4px;">
+                                                <span class="input-group-text bg-white text-paragraph"><i
+                                                        class="fas fa-calendar-check"></i></span>
+                                            </div>
+                                            <input type="text" name="daterange"
+                                                class="form-control text-18px border-left-0 border-right-0 pl-0 outline-none"
+                                                placeholder="vendredi 28 mai 2021" />
+                                            <div class="input-group-append"
+                                                style="margin-right: -2px; border-radius: 4px;">
+                                                <span class="input-group-text bg-white text-red " id="addon-wrapping"><i
+                                                        class="fas fa-angle-down"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-white" for="exampleInputEmail1">Au</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend"
+                                                style="margin-right: -2px;  border-radius: 4px;">
+                                                <span class="input-group-text bg-white text-paragraph"><i
+                                                        class="fas fa-calendar-check"></i></span>
+                                            </div>
+                                            <input type="text" name="daterange"
+                                                class="form-control text-18px border-left-0 border-right-0 pl-0 outline-none"
+                                                placeholder="vendredi 29 mai 2021" />
+                                            <div class="input-group-append"
+                                                style="margin-right: -2px; border-radius: 4px;">
+                                                <span class="input-group-text bg-white text-red " id="addon-wrapping"><i
+                                                        class="fas fa-angle-down"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group pt-4">
+                                        <div class="dropdown w-full pb-2">
+                                            <a class="btn bg-white dropdown-toggle btn-block d-flex align-items-center justify-content-between outline-none overflow-hidden position-relative"
+                                                href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <div class="d-flex align-items-center pr-1 mr-1 border-right">
+                                                    <i class="fas fa-user text-paragraph h6 mr-2 mb-0"></i>
+                                                    <span class="h6 text-gray font-weight-bold mb-0">2 adultes</span>
+                                                </div>
+                                                <div class="d-flex align-items-center pr-1 mr-1 border-right">
+                                                    <i
+                                                        class="fas fa-user text-paragraph h6 mr-2 mb-0 d-lg-block d-none"></i>
+                                                    <span class="h6 text-gray font-weight-bold mb-0">1 enfant</span>
+                                                </div>
+                                                <div class="d-flex align-items-center pr-1 mr-1">
+                                                    <i
+                                                        class="fas fa-bed text-paragraph h6 mr-2 mb-0 d-lg-block d-none"></i>
+                                                    <span class="h6 text-gray font-weight-bold mb-0">1 chambre</span>
+                                                </div>
+
+                                                <span
+                                                    class="text-red text-18px ml-1 ml-sm-4 mb-0 position-absolute px-3 py-1 bg-white"
+                                                    style="right: 0px; z-index: 10;">
+                                                    <i class="fas fa-angle-double-down"></i>
+                                                </span>
+                                            </a>
+
+                                            <div class="dropdown-menu dropdown2 p-xl-4 p-3 w-100 mt-2"
+                                                aria-labelledby="dropdownMenuLink">
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <h5 class="text-18px font-weight-bold text-gray">Adultes</h5>
+                                                    <div class="d-flex align-items-center">
+                                                        <button
+                                                            class="btn btn-outline px-3 border-red h5 font-weight-bold text-gray">-</button>
+                                                        <span
+                                                            class="text-18px font-weight-bold text-gray px-3 mb-1">3</span>
+                                                        <button
+                                                            class="btn btn-outline px-3 border-red h5 font-weight-bold text-gray">+</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <div class="">
+                                                        <h5 class="text-18px font-weight-bold text-gray mb-0">Enfants
+                                                        </h5>
+                                                        <p class="text-14px text-paragraph font-weight-bold">De 0 à 17
+                                                            ans
+                                                        </p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <button
+                                                            class="btn btn-outline px-3 border-red h5 font-weight-bold text-gray">-</button>
+                                                        <span
+                                                            class="text-18px font-weight-bold text-gray px-3 mb-1">2</span>
+                                                        <button
+                                                            class="btn btn-outline px-3 border-red h5 font-weight-bold text-gray">+</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <h5 class="text-18px font-weight-bold text-gray">Chambres</h5>
+                                                    <div class="d-flex align-items-center">
+                                                        <button
+                                                            class="btn btn-outline px-3 border-red h5 font-weight-bold text-gray">-</button>
+                                                        <span
+                                                            class="text-18px font-weight-bold text-gray px-3 mb-1">3</span>
+                                                        <button
+                                                            class="btn btn-outline px-3 border-red h5 font-weight-bold text-gray">+</button>
+                                                    </div>
+                                                </div>
+
+                                                <p class="text-14px font-weight-bold">Préciser l’age de l’enfant
+                                                    voyageant
+                                                    avec vous :
+                                                </p>
+                                                <select class="form-control custom-select-icon border-red mb-3"
+                                                    style="max-width: 170px" id="exampleFormControlSelect1">
+                                                    <option>1 ans</option>
+                                                    <option>2 ans</option>
+                                                    <option>3 ans</option>
+                                                    <option>4 ans</option>
+                                                    <option>5 ans</option>
+                                                </select>
+
+
+                                                <select class="form-control custom-select-icon border-red"
+                                                    style="max-width: 170px" id="exampleFormControlSelect1">
+                                                    <option>1 ans</option>
+                                                    <option>2 ans</option>
+                                                    <option>3 ans</option>
+                                                    <option>4 ans</option>
+                                                    <option>5 ans</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <div class="text-center mt-4 pb-3">
+                                    <button
+                                        class="btn bg-red text-white text-18px font-weight-bold px-5 py-2">Rechercher</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Selction Editing Area End -->
+
+                        <!-- Selection Area End -->
+
+
+                        <!-- 12 Deal Cart Start -->
                         <div class="card rounded-10px mb-4">
                             <div class="card-body px-4 py-3">
                                 <div class="d-flex align-items-center">
@@ -438,6 +666,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- 12 Deal Cart End -->
 
                         <!-- Show desktop Hide in mobile Left side card start -->
                         <div class="d-lg-block d-none">
@@ -538,6 +767,7 @@
                         <!-- Show desktop Hide in mobile Left side card start -->
 
                     </div>
+
                     <div class="col-xl-8 col-lg-7">
                         <!-- Slider Start -->
                         <div class="rounded-10px mb-4">
@@ -598,6 +828,68 @@
                         </div>
                         <!-- Purchase Message End -->
 
+
+                        <!-- Recomandation Start -->
+                        <div class="card rounded-10px mb-4">
+                            <div class="card-body px-3 py-3">
+                                <div class="d-flex mb-4">
+                                    <h5 class="text-black font-weight-bolder text-uppercase border-t-3 border-red tracking-12 pt-2"
+                                        style="width: 200px;">RECOMMANDATION</h5>
+                                </div>
+                                <h6 class="text-black font-weight-bold">2 adultes et 1 enfant</h6>
+                                <div class="row align-items-stretch mx-1">
+                                    <div class="col-lg-4 border-top border-lg-right border-gray border-1px px-0">
+                                        <div class="pr-3 py-2">
+                                            <h6 class="text-black font-weight-bold">1x <span
+                                                    class="text-red border-b font-weight-black">Chambre
+                                                    Supérieure -
+                                                    Balcon</span></h6>
+                                            <p class="text-14px font-weight-bold text-black mb-1">Tarif pour : <i
+                                                    class="fas fa-user text-18px px-1"></i><i
+                                                    class="fas fa-user text-18px px-1"></i>+ <i
+                                                    class="fas fa-user text-14px"></i></p>
+                                            <p class="text-12px font-weight-semibold text-black">1 grand lit double ou 2
+                                                lits
+                                                simples</p>
+                                            <p class="text-12px font-weight-semibold text-green mb-4">Annulation
+                                                GRATUITE
+                                                avant le 30 mai 2021</p>
+                                            <p class="text-12px font-weight-semibold text-green "> <i
+                                                    class="fas fa-coffee 18px pr-2"></i>Petit-déjeuner compris
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-lg-4 border-top border-lg-right border-gray border-1px px-0 d-lg-block d-none ">
+                                        <div class="px-3 py-2">
+                                            <h4 class="text-black font-weight-bold mb-0">40 000 <sup>DH</sup></h4>
+                                            <p class="text-12px font-weight-bold text-paragraph">+ taxes et frais : 1500
+                                                <sup>DH</sup>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 border-top border-gray border-1px px-0">
+                                        <div class="pr-3 pl-lg-3 py-2">
+                                            <p class="text-12px font-weight-bold text-paragraph mb-1">26 nuits, 2
+                                                adultes, 1
+                                                enfant</p>
+                                            <h4 class="text-black font-weight-bold mb-0">40 000 <sup>DH</sup></h4>
+                                            <p class="text-12px font-weight-bold text-paragraph">+ taxes et frais :
+                                                1500
+                                                <sup>DH</sup>
+                                            <div class="mt-4">
+                                                <button
+                                                    class="btn bg-red px-5 px-lg-4 px-xl-5 py-2 text-white h5">Réserver</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Recomandation End -->
+
+
                         <!-- Overview Start -->
                         <div class="card rounded-10px mb-4">
                             <div class="card-body px-4 py-3">
@@ -607,21 +899,28 @@
                                 </div>
                                 <h6 class="text-black font-weight-bolder tracking-12 mb-3">
                                     Description</h6>
-                                <p class="text-14px text-paragraph font-weight-semibold font-italic mb-3">Lorem ipsum
+                                <p class="text-14px text-paragraph font-weight-semibold font-italic mb-3">Lorem
+                                    ipsum
                                     dolor
                                     sit amet, consectetuer adipiscing
-                                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper</p>
+                                    elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                                    erat
+                                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                </p>
                                 <p class="text-12px text-paragraph font-weight-semibold tracking-12 mb-5">Nam liber
                                     tempor
                                     cum
                                     soluta nobis
-                                    eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim
-                                    assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
-                                    claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt
+                                    eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+                                    possim
+                                    assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit
+                                    eorum
+                                    claritatem. Investigationes demonstraverunt lectores legere me lius quod ii
+                                    legunt
                                     saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem
                                     consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus
-                                    parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima
+                                    parum claram, anteposuerit litterarum formas humanitatis per seacula quarta
+                                    decima
                                     et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant
                                     sollemnes in futurum.</p>
 
@@ -685,7 +984,8 @@
                                 </div>
 
 
-                                <h6 class="text-black font-weight-bolder tracking-12 mb-3 pt-3">Location details</h6>
+                                <h6 class="text-black font-weight-bolder tracking-12 mb-3 pt-3">Location details
+                                </h6>
                                 <div class="row table-box-border">
                                     <div
                                         class="col-xl-4 col-6 px-2 px-lg-3 py-2 border-table text-black font-weight-semibold text-capitalize p">
@@ -895,7 +1195,8 @@
                                         </div>
                                         <p class="text-14px text-paragraph">Lorem ipsum dolor sit amet consectetur
                                             adipisicing elit. Dolorum dignissimos vero, ad architecto ut vitae eos.
-                                            Molestiae sit, sint asperiores aliquam necessitatibus ad fuga eum suscipit
+                                            Molestiae sit, sint asperiores aliquam necessitatibus ad fuga eum
+                                            suscipit
                                             nostrum saepe? Expedita, in.</p>
                                         <div class="d-flex justify-content-end">
                                             <button
@@ -923,7 +1224,8 @@
                                         </div>
                                         <p class="text-14px text-paragraph">Lorem ipsum dolor sit amet consectetur
                                             adipisicing elit. Dolorum dignissimos vero, ad architecto ut vitae eos.
-                                            Molestiae sit, sint asperiores aliquam necessitatibus ad fuga eum suscipit
+                                            Molestiae sit, sint asperiores aliquam necessitatibus ad fuga eum
+                                            suscipit
                                             nostrum saepe? Expedita, in.</p>
                                         <div class="d-flex justify-content-end">
                                             <button
@@ -956,7 +1258,8 @@
                                         <span class="h4 text-red mr-2 mb-0"><i class="fas fa-check"></i></span>
                                         <p class="text-14px text-paragraph font-weight-semibold text-capitalize mb-0">
                                             The
-                                            offer includes:<span class="text-black font-weight-bolder"> 3 night at hotel
+                                            offer includes:<span class="text-black font-weight-bolder"> 3 night at
+                                                hotel
                                                 ***</span>
                                         </p>
                                     </div>
@@ -993,7 +1296,8 @@
                                         <p class="text-14px text-paragraph font-weight-semibold text-capitalize mb-0">
                                             <span class="text-black font-weight-bolder">Stay cool</span> as you swim
                                             beneath a
-                                            cascading waterfall in the outdoor pool, where you can watch dive-in movies
+                                            cascading waterfall in the outdoor pool, where you can watch dive-in
+                                            movies
                                             on
                                             Wednesday, Thursday, and Saturday nights.
                                         </p>
@@ -1002,7 +1306,8 @@
                                         <span class="h4 text-red mr-2 mb-0"><i class="fas fa-check"></i></span>
                                         <p class="text-14px text-paragraph font-weight-semibold text-capitalize mb-0">
                                             Deal
-                                            valid: <span class="text-black font-weight-bolder">15.10.2021.</span></p>
+                                            valid: <span class="text-black font-weight-bolder">15.10.2021.</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -1197,6 +1502,9 @@
         integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK"
         crossorigin="anonymous"></script> -->
 
+    <!-- Date Range Picker -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <!-- Owl JS -->
     <script src="./assets/js/owl.carousel.min.js"></script>
 
@@ -1265,6 +1573,40 @@
 
             });
         });
+
+        // Date Ranger
+        $(function () {
+            $('input[name="daterange"]').daterangepicker({
+                singleDatePicker: true,
+                opens: 'left',
+                autoApply: true,
+                showCustomRangeLabel: true,
+                "applyButtonClasses": "bg-red",
+                autoUpdateInput: false,
+            }, function (start, end, label) {
+                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+                this.autoUpdateInput = true;
+            });
+        });
+
+        // Drop Down Menu open 
+        $(function () {
+
+            $('.dropdown-toggle').on('click', function (event) {
+                $('.dropdown-menu').slideToggle();
+                event.stopPropagation();
+            });
+
+            $('.dropdown-menu.dropdown2').on('click', function (event) {
+                event.stopPropagation();
+            });
+
+            $(window).on('click', function () {
+                $('.dropdown-menu.dropdown2').slideUp();
+            });
+
+        });
+
     </script>
 </body>
 
